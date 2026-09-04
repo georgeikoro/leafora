@@ -165,6 +165,15 @@ img{ max-width:100%; }
   padding:16px 2px 4px;
   font-size:18px; font-weight:500;
 }
+/* only the homepage's drawer sits directly in .shell, alongside the hero's
+   absolutely-positioned visual/orbits, which is what it needs to cover; the
+   .topbar variant already has its own solid background and z-index        */
+.shell > .mobile-nav{
+  position:relative; z-index:20;
+  background:var(--ink);
+  margin-inline:calc(var(--pad-x) * -1);
+  padding-inline:var(--pad-x);
+}
 .mobile-nav .btn{ align-self:flex-start; margin-top:4px; }
 
 /* ── Hero grid ───────────────────────────────────────────── */
