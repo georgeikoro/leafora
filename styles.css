@@ -184,6 +184,7 @@ body.nav-open{ overflow:hidden; }   /* the drawer is a fixed overlay on the home
   background:var(--ink);
   max-height:none;
   padding-inline:var(--pad-x);
+  overflow-y:auto;
 }
 .mobile-nav .btn{ align-self:flex-start; margin-top:4px; }
 
@@ -1065,7 +1066,7 @@ body.nav-open{ overflow:hidden; }   /* the drawer is a fixed overlay on the home
   }
   .mobile-nav a:last-of-type{ border-bottom:0; }
   .mobile-nav .btn{ align-self:stretch; justify-content:center; margin-top:12px; }
-  .lang--drawer{ display:inline-flex; align-self:flex-start; margin-bottom:2px; }
+  .lang--drawer{ display:inline-flex; align-self:flex-start; margin-top:14px; }
   .lang--drawer .lang__btn{ padding:6px 15px; font-size:12px; }
 
   .hero{
