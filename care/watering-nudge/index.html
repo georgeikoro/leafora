@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The watering nudge &middot; Leafora</title>
+<meta name="description" content="One message a week for the plants you own. What it says and how to stop it." />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#143A28" />
+<link rel="canonical" href="https://leafora.example/care/watering-nudge/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Leafora" />
+<meta property="og:title" content="The watering nudge" />
+<meta property="og:description" content="One message a week for the plants you own. What it says and how to stop it." />
+<meta property="og:url" content="https://leafora.example/care/watering-nudge/" />
+<meta property="og:image" content="https://leafora.example/assets/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="A monstera against a sage wall in soft daylight" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/cabinet-grotesk-800.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/switzer-400.woff2" crossorigin />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="stylesheet" href="/shop.css" />
+</head>
+<body class="shop">
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="/">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#CFEFA4" stroke-width="1.8"/>
+            <path d="M20 29c0-6.6 3.4-10.6 9.4-11.4-.4 6.8-3.8 10.6-9.4 11.4Z" stroke="#CFEFA4" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M19 24c-4.6 0-7.6-3-8-8.4 5 .6 8 3.4 8 8.4Z" stroke="#CFEFA4" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M20 32v-6" stroke="#CFEFA4" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__word">Leafora</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+        <a href="/care/" data-sv="Skötselguide" data-en="Care Guide">Care Guide</a>
+        <a href="/about/" data-sv="Om oss" data-en="About Us">About Us</a>
+        <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+        <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+      </nav>
+
+      <a class="nav__saved" href="/saved/"><span data-sv="Sparat" data-en="Saved">Saved</span><span class="nav__count nav__count--quiet" id="navCount" hidden>0</span></a>
+
+      <a class="btn btn--cream nav__cta" href="/cart/">
+        <span data-sv="Varukorg" data-en="Basket">Basket</span>
+        <span class="nav__count" id="cartCount" hidden>0</span>
+      </a>
+
+      <div class="lang lang--nav" role="group" aria-label="Language">
+        <button type="button" class="lang__btn" data-lang="sv" aria-pressed="true">SV</button>
+        <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+      <a href="/care/" data-sv="Skötselguide" data-en="Care Guide">Care Guide</a>
+      <a href="/about/" data-sv="Om oss" data-en="About Us">About Us</a>
+      <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+      <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+      <a href="/saved/" data-sv="Sparat" data-en="Saved">Saved</a>
+      <a href="/cart/" data-sv="Varukorg" data-en="Basket">Basket</a>
+      <a href="/search/" data-sv="Sök" data-en="Search">Search</a>
+      <a href="/contact/" data-sv="Fråga en odlare" data-en="Ask a grower">Ask a grower</a>
+    </div>
+  </header>
+<main class="page">
+  <div class="shop-head shop-head--wide">
+    <span class="shop-head__eyebrow" data-sv="Skötselguide" data-en="Care guide">Care guide</span>
+    <h1 class="shop-head__title" data-sv="Vattningspåminnelsen" data-en="The watering nudge">The watering nudge</h1>
+    <p class="shop-head__lede" data-sv="En påminnelsetjänst för växterna du äger, skriven utifrån samma skötselkort som kommer i lådan." data-en="A reminder service for the plants you own, written from the same care card that comes in the box.">A reminder service for the plants you own, written from the same care card that comes in the box.</p>
+  </div>
+
+  <div class="legal">
+    <section class="legal__section">
+      <h2 data-sv="Vad det är" data-en="What it is">What it is</h2>
+      <p data-sv="Ett meddelande i veckan, den vecka en av dina växter behöver vatten. Den vet vilken art du äger och hur dina rum beter sig den månaden, eftersom det är de enda två sakerna som förändrar svaret." data-en="One message a week, in the week a plant of yours needs water. It knows which species you own and how your rooms behave in that month, because those are the only two things that change the answer.">One message a week, in the week a plant of yours needs water. It knows which species you own and how your rooms behave in that month, because those are the only two things that change the answer.</p>
+      <p data-sv="Det är inget nyhetsbrev. Det finns inget erbjudande i det." data-en="It is not a newsletter. There is no offer in it.">It is not a newsletter. There is no offer in it.</p>
+    </section>
+    <section class="legal__section">
+      <h2 data-sv="Så här ser ett meddelande ut" data-en="What a message looks like">What a message looks like</h2>
+      <p data-sv="&quot;Din monstera behöver vatten den här veckan. Är översta centimetern torr? Vattna tills det rinner ut i botten, häll sedan ut fatet.&quot; Det är hela meddelandet." data-en="&quot;Your monstera is due this week. Top inch dry? Water until it runs out of the bottom, then tip the saucer.&quot; That is the whole message.">"Your monstera is due this week. Top inch dry? Water until it runs out of the bottom, then tip the saucer." That is the whole message.</p>
+      <p data-sv="Fyra gånger om året får du också en säsongsanteckning: när du ska börja gödsla, när du ska sluta, när du ska plantera om, och vad att värmen sätts på gör med din luft." data-en="Four times a year you also get a seasonal note: when to start feeding, when to stop, when to repot, and what the heating going on will do to your air.">Four times a year you also get a seasonal note: when to start feeding, when to stop, when to repot, and what the heating going on will do to your air.</p>
+    </section>
+    <section class="legal__section">
+      <h2 data-sv="Så här stoppar du det" data-en="How to stop it">How to stop it</h2>
+      <p><span data-sv="Svara STOPP så stoppas det, permanent, utan något bekräftelsemejl som ber dig tänka om. Du kan också stänga av det i" data-en="Reply STOP and it stops, permanently, with no confirmation email asking you to reconsider. You can also turn it off in">Reply STOP and it stops, permanently, with no confirmation email asking you to reconsider. You can also turn it off in</span> <a href="/account/" data-sv="dina kontoinställningar" data-en="your account settings">your account settings</a>.</p>
+      <p data-sv="Att stänga av det påverkar aldrig en beställning, och det tar aldrig bort din rätt att fråga en odlare något." data-en="Turning it off never affects an order, and it never removes your right to ask a grower a question.">Turning it off never affects an order, and it never removes your right to ask a grower a question.</p>
+    </section>
+    <section class="legal__section">
+      <h2 data-sv="Vad vi gör med informationen" data-en="What we do with the data">What we do with the data</h2>
+      <p><span data-sv="Din e-postadress och vilka växter du sagt att du äger. Inget annat, ingen spårning, ingen försäljning av listan. Det beskrivs på" data-en="Your email address and which plants you told us you own. Nothing else, no tracking, no sale of the list. It is set out in the">Your email address and which plants you told us you own. Nothing else, no tracking, no sale of the list. It is set out in the</span> <a href="/privacy/" data-sv="sidan om integritet" data-en="privacy page">privacy page</a>.</p>
+    </section>
+  </div>
+
+  <aside class="shop-note">
+    <h2 class="shop-note__title" data-sv="För allt annat" data-en="For anything else">For anything else</h2>
+    <p data-sv="Ett foto av växten och ett av rummet är oftast allt en odlare behöver." data-en="A photograph of the plant and one of the room is usually all a grower needs.">A photograph of the plant and one of the room is usually all a grower needs.</p>
+    <a class="btn btn--forest" href="/contact/"><span data-sv="Fråga en odlare" data-en="Ask a grower">Ask a grower</span> <svg class="arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </aside>
+</main>
+
+  <footer class="foot foot--slim">
+    <div class="foot__legal">
+      <span>&copy; 2026 Leafora &middot; <span data-sv="odlat i Kent, packat för hand" data-en="grown in Kent, packed by hand">grown in Kent, packed by hand</span></span>
+      <span class="foot__legal-links">
+        <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+        <a href="/care/" data-sv="Skötselguide" data-en="Care guide">Care guide</a>
+        <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+        <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+        <a href="/contact/" data-sv="Kontakt" data-en="Contact">Contact</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/accessibility/" data-sv="Tillgänglighet" data-en="Accessibility">Accessibility</a>
+        <a href="/sitemap/" data-sv="Sidkarta" data-en="Sitemap">Sitemap</a>
+        <a href="/privacy/" data-sv="Integritet" data-en="Privacy">Privacy</a>
+        <a href="/terms/" data-sv="Villkor" data-en="Terms">Terms</a>
+        <a href="/cookies/">Cookies</a>
+        <a href="/search/" data-sv="Sök" data-en="Search">Search</a>
+        <a href="/account/" data-sv="Konto" data-en="Account">Account</a>
+      </span>
+    </div>
+  </footer>
+<script src="/shop.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Plants &middot; Leafora</title>
+<meta name="description" content="Every plant we grow, with the light and water it actually needs. Grown in Kent, packed by hand." />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#143A28" />
+<link rel="canonical" href="https://leafora.example/plants/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Leafora" />
+<meta property="og:title" content="Plants" />
+<meta property="og:description" content="Every plant we grow, with the light and water it actually needs. Grown in Kent, packed by hand." />
+<meta property="og:url" content="https://leafora.example/plants/" />
+<meta property="og:image" content="https://leafora.example/assets/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="A monstera against a sage wall in soft daylight" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/cabinet-grotesk-800.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/switzer-400.woff2" crossorigin />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="stylesheet" href="/shop.css" />
+</head>
+<body class="shop">
+
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="/">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#CFEFA4" stroke-width="1.8"/>
+            <path d="M20 29c0-6.6 3.4-10.6 9.4-11.4-.4 6.8-3.8 10.6-9.4 11.4Z" stroke="#CFEFA4" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M19 24c-4.6 0-7.6-3-8-8.4 5 .6 8 3.4 8 8.4Z" stroke="#CFEFA4" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M20 32v-6" stroke="#CFEFA4" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__word">Leafora</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="/plants/" aria-current="page" data-sv="Växter" data-en="Plants">Plants</a>
+        <a href="/care/" data-sv="Skötselguide" data-en="Care Guide">Care Guide</a>
+        <a href="/about/" data-sv="Om oss" data-en="About Us">About Us</a>
+        <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+        <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+      </nav>
+
+      <a class="nav__saved" href="/saved/"><span data-sv="Sparat" data-en="Saved">Saved</span><span class="nav__count nav__count--quiet" id="navCount" hidden>0</span></a>
+
+      <a class="btn btn--cream nav__cta" href="/cart/">
+        <span data-sv="Varukorg" data-en="Basket">Basket</span>
+        <span class="nav__count" id="cartCount" hidden>0</span>
+      </a>
+
+      <div class="lang lang--nav" role="group" aria-label="Language">
+        <button type="button" class="lang__btn" data-lang="sv" aria-pressed="true">SV</button>
+        <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+      <a href="/care/" data-sv="Skötselguide" data-en="Care Guide">Care Guide</a>
+      <a href="/about/" data-sv="Om oss" data-en="About Us">About Us</a>
+      <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+      <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+    </div>
+  </header>
+
+<main class="page">
+  <div class="shop-head">
+    <span class="shop-head__eyebrow" data-sv="Vår butik" data-en="Our shop">Our shop</span>
+    <h1 class="shop-head__title" data-sv="Varje växt vi odlar" data-en="Every plant we grow">Every plant we grow</h1>
+    <p class="shop-head__lede"
+       data-sv="Nio stycken, alla uppfödda i samma växthus. Filtrera efter det ljus du har snarare än växten du såg någonstans. Det är det enda valet som verkligen spelar roll."
+       data-en="Nine of them, all raised in the same greenhouse. Filter by the light you have rather than the plant you saw somewhere. It is the only choice that really matters.">
+      Nine of them, all raised in the same greenhouse. Filter by the light you have
+      rather than the plant you saw somewhere. It is the only choice that really matters.
+    </p>
+    <p class="shop-head__quiz"><span data-sv="Osäker på var du ska börja?" data-en="Not sure where to start?">Not sure where to start?</span> <a href="/find-a-plant/"><span data-sv="Svara på tre frågor" data-en="Answer three questions">Answer three questions</span></a>.</p>
+  </div>
+
+  <div class="filters">
+    <div class="filters__row">
+      <label class="sr-only" for="plantSearch">Search plants</label>
+      <div class="search-field">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <input id="plantSearch" type="search" placeholder="Search by name or species" autocomplete="off" />
+      </div>
+    </div>
+    <div class="filters__row">
+      <span class="filters__label" id="lightLabel" data-sv="Ljus" data-en="Light">Light</span>
+      <div class="chips" role="group" aria-labelledby="lightLabel">
+        <button class="chip" type="button" data-filter="light" data-value="any" aria-pressed="true" data-sv="Alla" data-en="Any">Any</button>
+        <button class="chip" type="button" data-filter="light" data-value="low" aria-pressed="false" data-sv="Svagt ljus" data-en="Low light">Low light</button>
+        <button class="chip" type="button" data-filter="light" data-value="bright" aria-pressed="false" data-sv="Starkt" data-en="Bright">Bright</button>
+      </div>
+    </div>
+    <div class="filters__row">
+      <span class="filters__label" id="waterLabel" data-sv="Vatten" data-en="Water">Water</span>
+      <div class="chips" role="group" aria-labelledby="waterLabel">
+        <button class="chip" type="button" data-filter="water" data-value="any" aria-pressed="true" data-sv="Alla" data-en="Any">Any</button>
+        <button class="chip" type="button" data-filter="water" data-value="low" aria-pressed="false" data-sv="Sällan" data-en="Rarely">Rarely</button>
+        <button class="chip" type="button" data-filter="water" data-value="weekly" aria-pressed="false" data-sv="Varje vecka" data-en="Weekly">Weekly</button>
+      </div>
+    </div>
+    <div class="filters__row">
+      <span class="filters__label" id="sizeLabel" data-sv="Storlek" data-en="Size">Size</span>
+      <div class="chips" role="group" aria-labelledby="sizeLabel">
+        <button class="chip" type="button" data-filter="size" data-value="any" aria-pressed="true" data-sv="Alla" data-en="Any">Any</button>
+        <button class="chip" type="button" data-filter="size" data-value="small" aria-pressed="false" data-sv="Skrivbord" data-en="Desk">Desk</button>
+        <button class="chip" type="button" data-filter="size" data-value="medium" aria-pressed="false" data-sv="Hylla" data-en="Shelf">Shelf</button>
+        <button class="chip" type="button" data-filter="size" data-value="large" aria-pressed="false" data-sv="Golv" data-en="Floor">Floor</button>
+      </div>
+    </div>
+
+    <div class="filters__row filters__row--end">
+      <label class="filters__label" for="sort" data-sv="Sortera" data-en="Sort">Sort</label>
+      <select class="select" id="sort">
+        <option value="featured" data-sv="Utvalda" data-en="Featured">Featured</option>
+        <option value="low" data-sv="Pris, lågt till högt" data-en="Price, low to high">Price, low to high</option>
+        <option value="high" data-sv="Pris, högt till lågt" data-en="Price, high to low">Price, high to low</option>
+        <option value="name" data-sv="Namn, A till Ö" data-en="Name, A to Z">Name, A to Z</option>
+      </select>
+    </div>
+  </div>
+
+  <p class="count" aria-live="polite"><span id="count">9</span> plants</p>
+
+  <ul class="shop-grid" id="grid">
+      <li class="plant" data-slug="the-monstera-pot" data-light="bright" data-water="low" data-size="medium" data-price="96" data-name="The Monstera Pot">
+        <a class="plant__link" href="/plants/the-monstera-pot/">
+          <span class="sr-only">The Monstera Pot, £96</span>
+          <img class="plant__img" src="/assets/card-monstera.jpg" width="673" height="900" loading="lazy" decoding="async" alt="The Monstera Pot, Monstera deliciosa" />
+          <img class="plant__img plant__img--alt" src="/assets/card-monstera-alt.jpg" width="673" height="900" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        </a>
+        <span class="plant__chip" data-sv="Starkt ljus" data-en="Bright light">Bright light</span>
+        <button class="plant__save" type="button" aria-pressed="false" aria-label="Save The Monstera Pot"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.4s-7.6-4.6-7.6-9.6A4.4 4.4 0 0 1 12 8.4a4.4 4.4 0 0 1 7.6 2.4c0 5-7.6 9.6-7.6 9.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+        <div class="plant__meta">
+          <span class="plant__kicker" data-sv="Monstera deliciosa" data-en="Monstera deliciosa">Monstera deliciosa</span>
+          <h2 class="plant__name">The Monstera Pot</h2>
+          <span class="plant__price">£96</span>
+        </div>
+        <a class="plant__cta" href="/plants/the-monstera-pot/" tabindex="-1" aria-hidden="true">
+          <span class="plant__cta-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M20 4c0 9-4.7 14.5-12 15 0-8.6 4.4-14 12-15Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 19c.6-5.6 3.6-9.8 8.6-12.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span class="plant__cta-text" data-sv="Ta hem den" data-en="Bring it home">Bring it home</span>
+          <svg class="plant__cta-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </li>
+      <li class="plant" data-slug="the-fig-bundle" data-light="bright" data-water="weekly" data-size="large" data-price="128" data-name="The Fig Bundle">
+        <a class="plant__link" href="/plants/the-fig-bundle/">
+          <span class="sr-only">The Fig Bundle, £128</span>
+          <img class="plant__img" src="/assets/card-fig.jpg" width="673" height="900" loading="lazy" decoding="async" alt="The Fig Bundle, Ficus lyrata" />
+          <img class="plant__img plant__img--alt" src="/assets/card-fig-alt.jpg" width="673" height="900" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        </a>
+        <span class="plant__chip" data-sv="Enkel skötsel" data-en="Easy care">Easy care</span>
+        <button class="plant__save" type="button" aria-pressed="false" aria-label="Save The Fig Bundle"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.4s-7.6-4.6-7.6-9.6A4.4 4.4 0 0 1 12 8.4a4.4 4.4 0 0 1 7.6 2.4c0 5-7.6 9.6-7.6 9.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+        <div class="plant__meta">
+          <span class="plant__kicker" data-sv="Ficus lyrata" data-en="Ficus lyrata">Ficus lyrata</span>
+          <h2 class="plant__name">The Fig Bundle</h2>
+          <span class="plant__price">£128</span>
+        </div>
+        <a class="plant__cta" href="/plants/the-fig-bundle/" tabindex="-1" aria-hidden="true">
+          <span class="plant__cta-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5c3.6 4.2 6 7.6 6 10.4a6 6 0 1 1-12 0c0-2.8 2.4-6.2 6-10.4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+          <span class="plant__cta-text" data-sv="Ta hem den" data-en="Bring it home">Bring it home</span>
+          <svg class="plant__cta-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </li>
+      <li class="plant" data-slug="the-root-vessel" data-light="bright" data-water="low" data-size="small" data-price="46" data-name="The Root Vessel">
+        <a class="plant__link" href="/plants/the-root-vessel/">
+          <span class="sr-only">The Root Vessel, £46</span>
+          <img class="plant__img" src="/assets/card-glass.jpg" width="673" height="900" loading="lazy" decoding="async" alt="The Root Vessel, Monstera, bare root" />
+          <img class="plant__img plant__img--alt" src="/assets/card-glass-alt.jpg" width="673" height="900" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        </a>
+        <span class="plant__chip" data-sv="Lite vatten" data-en="Low water">Low water</span>
+        <button class="plant__save" type="button" aria-pressed="false" aria-label="Save The Root Vessel"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.4s-7.6-4.6-7.6-9.6A4.4 4.4 0 0 1 12 8.4a4.4 4.4 0 0 1 7.6 2.4c0 5-7.6 9.6-7.6 9.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+        <div class="plant__meta">
+          <span class="plant__kicker" data-sv="Monstera, barrot" data-en="Monstera, bare root">Monstera, bare root</span>
+          <h2 class="plant__name">The Root Vessel</h2>
+          <span class="plant__price">£46</span>
+        </div>
+        <a class="plant__cta" href="/plants/the-root-vessel/" tabindex="-1" aria-hidden="true">
+          <span class="plant__cta-mark"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4 17 7M7 17l-1.6 1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span class="plant__cta-text" data-sv="Ta hem den" data-en="Bring it home">Bring it home</span>
+          <svg class="plant__cta-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </li>
+      <li class="plant" data-slug="the-shade-fig" data-light="low" data-water="weekly" data-size="medium" data-price="74" data-name="The Shade Fig">
+        <a class="plant__link" href="/plants/the-shade-fig/">
+          <span class="sr-only">The Shade Fig, £74</span>
+          <img class="plant__img" src="/assets/card-shade-fig.jpg" width="673" height="900" loading="lazy" decoding="async" alt="The Shade Fig, Ficus lyrata, compact" />
+          <img class="plant__img plant__img--alt" src="/assets/card-shade-fig-alt.jpg" width="673" height="900" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        </a>
+        <span class="plant__chip" data-sv="Svagt ljus" data-en="Low light">Low light</span>
+        <button class="plant__save" type="button" aria-pressed="false" aria-label="Save The Shade Fig"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.4s-7.6-4.6-7.6-9.6A4.4 4.4 0 0 1 12 8.4a4.4 4.4 0 0 1 7.6 2.4c0 5-7.6 9.6-7.6 9.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+        <div class="plant__meta">
+          <span class="plant__kicker" data-sv="Ficus lyrata, kompakt" data-en="Ficus lyrata, compact">Ficus lyrata, compact</span>
+          <h2 class="plant__name">The Shade Fig</h2>
+          <span class="plant__price">£74</span>
+        </div>
+        <a class="plant__cta" href="/plants/the-shade-fig/" tabindex="-1" aria-hidden="true">
+          <span class="plant__cta-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M20 4c0 9-4.7 14.5-12 15 0-8.6 4.4-14 12-15Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 19c.6-5.6 3.6-9.8 8.6-12.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span class="plant__cta-text" data-sv="Ta hem den" data-en="Bring it home">Bring it home</span>
+          <svg class="plant__cta-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </li>
+      <li class="plant" data-slug="the-desk-cutting" data-light="low" data-water="low" data-size="small" data-price="28" data-name="The Desk Cutting">
+        <a class="plant__link" href="/plants/the-desk-cutting/">
+          <span class="sr-only">The Desk Cutting, £28</span>
+          <img class="plant__img" src="/assets/card-desk-cutting.jpg" width="673" height="900" loading="lazy" decoding="async" alt="The Desk Cutting, Monstera cutting" />
+          <img class="plant__img plant__img--alt" src="/assets/card-desk-cutting-alt.jpg" width="673" height="900" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        </a>
+        <span class="plant__chip" data-sv="Svagt ljus" data-en="Low light">Low light</span>
+        <button class="plant__save" type="button" aria-pressed="false" aria-label="Save The Desk Cutting"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.4s-7.6-4.6-7.6-9.6A4.4 4.4 0 0 1 12 8.4a4.4 4.4 0 0 1 7.6 2.4c0 5-7.6 9.6-7.6 9.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+        <div class="plant__meta">
+          <span class="plant__kicker" data-sv="Monstera, stickling" data-en="Monstera cutting">Monstera cutting</span>
+          <h2 class="plant__name">The Desk Cutting</h2>
+          <span class="plant__price">£28</span>
+        </div>
+        <a class="plant__cta" href="/plants/the-desk-cutting/" tabindex="-1" aria-hidden="true">
+          <span class="plant__cta-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5c3.6 4.2 6 7.6 6 10.4a6 6 0 1 1-12 0c0-2.8 2.4-6.2 6-10.4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+          <span class="plant__cta-text" data-sv="Ta hem den" data-en="Bring it home">Bring it home</span>
+          <svg class="plant__cta-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </li>
+      <li class="plant" data-slug="the-corner-monstera" data-light="bright" data-water="low" data-size="large" data-price="164" data-name="The Corner Monstera">
+        <a class="plant__link" href="/plants/the-corner-monstera/">
+          <span class="sr-only">The Corner Monstera, £164</span>
+          <img class="plant__img" src="/assets/card-corner-monstera.jpg" width="673" height="900" loading="lazy" decoding="async" alt="The Corner Monstera, Monstera deliciosa, XL" />
+          <img class="plant__img plant__img--alt" src="/assets/card-corner-monstera-alt.jpg" width="673" height="900" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        </a>
+        <span class="plant__chip" data-sv="Starkt ljus" data-en="Bright light">Bright light</span>
+        <button class="plant__save" type="button" aria-pressed="false" aria-label="Save The Corner Monstera"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.4s-7.6-4.6-7.6-9.6A4.4 4.4 0 0 1 12 8.4a4.4 4.4 0 0 1 7.6 2.4c0 5-7.6 9.6-7.6 9.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+        <div class="plant__meta">
+          <span class="plant__kicker" data-sv="Monstera deliciosa, XL" data-en="Monstera deliciosa, XL">Monstera deliciosa, XL</span>
+          <h2 class="plant__name">The Corner Monstera</h2>
+          <span class="plant__price">£164</span>
+        </div>
+        <a class="plant__cta" href="/plants/the-corner-monstera/" tabindex="-1" aria-hidden="true">
+          <span class="plant__cta-mark"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4 17 7M7 17l-1.6 1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span class="plant__cta-text" data-sv="Ta hem den" data-en="Bring it home">Bring it home</span>
+          <svg class="plant__cta-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </li>
+      <li class="plant" data-slug="the-window-fig" data-light="bright" data-water="weekly" data-size="large" data-price="98" data-name="The Window Fig">
+        <a class="plant__link" href="/plants/the-window-fig/">
+          <span class="sr-only">The Window Fig, £98</span>
+          <img class="plant__img" src="/assets/card-window-fig.jpg" width="673" height="900" loading="lazy" decoding="async" alt="The Window Fig, Ficus lyrata" />
+          <img class="plant__img plant__img--alt" src="/assets/card-window-fig-alt.jpg" width="673" height="900" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        </a>
+        <span class="plant__chip" data-sv="Starkt ljus" data-en="Bright light">Bright light</span>
+        <button class="plant__save" type="button" aria-pressed="false" aria-label="Save The Window Fig"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.4s-7.6-4.6-7.6-9.6A4.4 4.4 0 0 1 12 8.4a4.4 4.4 0 0 1 7.6 2.4c0 5-7.6 9.6-7.6 9.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+        <div class="plant__meta">
+          <span class="plant__kicker" data-sv="Ficus lyrata" data-en="Ficus lyrata">Ficus lyrata</span>
+          <h2 class="plant__name">The Window Fig</h2>
+          <span class="plant__price">£98</span>
+        </div>
+        <a class="plant__cta" href="/plants/the-window-fig/" tabindex="-1" aria-hidden="true">
+          <span class="plant__cta-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M20 4c0 9-4.7 14.5-12 15 0-8.6 4.4-14 12-15Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 19c.6-5.6 3.6-9.8 8.6-12.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span class="plant__cta-text" data-sv="Ta hem den" data-en="Bring it home">Bring it home</span>
+          <svg class="plant__cta-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </li>
+      <li class="plant" data-slug="the-glass-trio" data-light="low" data-water="low" data-size="small" data-price="64" data-name="The Glass Trio">
+        <a class="plant__link" href="/plants/the-glass-trio/">
+          <span class="sr-only">The Glass Trio, £64</span>
+          <img class="plant__img" src="/assets/card-glass-trio.jpg" width="673" height="900" loading="lazy" decoding="async" alt="The Glass Trio, Monstera cuttings" />
+          <img class="plant__img plant__img--alt" src="/assets/card-glass-trio-alt.jpg" width="673" height="900" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        </a>
+        <span class="plant__chip" data-sv="Lite vatten" data-en="Low water">Low water</span>
+        <button class="plant__save" type="button" aria-pressed="false" aria-label="Save The Glass Trio"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.4s-7.6-4.6-7.6-9.6A4.4 4.4 0 0 1 12 8.4a4.4 4.4 0 0 1 7.6 2.4c0 5-7.6 9.6-7.6 9.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+        <div class="plant__meta">
+          <span class="plant__kicker" data-sv="Monstera, sticklingar" data-en="Monstera cuttings">Monstera cuttings</span>
+          <h2 class="plant__name">The Glass Trio</h2>
+          <span class="plant__price">£64</span>
+        </div>
+        <a class="plant__cta" href="/plants/the-glass-trio/" tabindex="-1" aria-hidden="true">
+          <span class="plant__cta-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5c3.6 4.2 6 7.6 6 10.4a6 6 0 1 1-12 0c0-2.8 2.4-6.2 6-10.4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+          <span class="plant__cta-text" data-sv="Ta hem den" data-en="Bring it home">Bring it home</span>
+          <svg class="plant__cta-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </li>
+      <li class="plant" data-slug="the-studio-monstera" data-light="bright" data-water="low" data-size="medium" data-price="118" data-name="The Studio Monstera">
+        <a class="plant__link" href="/plants/the-studio-monstera/">
+          <span class="sr-only">The Studio Monstera, £118</span>
+          <img class="plant__img" src="/assets/card-studio-monstera.jpg" width="673" height="900" loading="lazy" decoding="async" alt="The Studio Monstera, Monstera deliciosa" />
+          <img class="plant__img plant__img--alt" src="/assets/card-studio-monstera-alt.jpg" width="673" height="900" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        </a>
+        <span class="plant__chip" data-sv="Enkel skötsel" data-en="Easy care">Easy care</span>
+        <button class="plant__save" type="button" aria-pressed="false" aria-label="Save The Studio Monstera"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.4s-7.6-4.6-7.6-9.6A4.4 4.4 0 0 1 12 8.4a4.4 4.4 0 0 1 7.6 2.4c0 5-7.6 9.6-7.6 9.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+        <div class="plant__meta">
+          <span class="plant__kicker" data-sv="Monstera deliciosa" data-en="Monstera deliciosa">Monstera deliciosa</span>
+          <h2 class="plant__name">The Studio Monstera</h2>
+          <span class="plant__price">£118</span>
+        </div>
+        <a class="plant__cta" href="/plants/the-studio-monstera/" tabindex="-1" aria-hidden="true">
+          <span class="plant__cta-mark"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4 17 7M7 17l-1.6 1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span class="plant__cta-text" data-sv="Ta hem den" data-en="Bring it home">Bring it home</span>
+          <svg class="plant__cta-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </li>
+  </ul>
+
+  <p class="empty" id="empty" hidden>
+    <span data-sv="Inget matchar den kombinationen än." data-en="Nothing matches that combination yet.">Nothing matches that combination yet.</span> <button class="linkish" type="button" id="reset" data-sv="Rensa filtren" data-en="Clear the filters">Clear the filters</button>
+  </p>
+
+  <aside class="shop-note">
+    <h2 class="shop-note__title" data-sv="Osäker på vad som passar ditt rum" data-en="Unsure what will suit your room">Unsure what will suit your room</h2>
+    <p data-sv="Skicka oss ett foto av hörnet du har i åtanke. En odlare berättar vad som överlever där, och vad som bara kommer tyna bort." data-en="Send us a photograph of the corner you have in mind. A grower will tell you what will survive there, and what will only sulk.">Send us a photograph of the corner you have in mind. A grower will tell you what will survive there, and what will only sulk.</p>
+    <a class="btn btn--forest" href="/contact/"><span data-sv="Fråga en odlare" data-en="Ask a grower">Ask a grower</span>
+      <svg class="arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </aside>
+</main>
+
+  <footer class="foot foot--slim">
+    <div class="foot__legal">
+      <span>&copy; 2026 Leafora &middot; <span data-sv="odlat i Kent, packat för hand" data-en="grown in Kent, packed by hand">grown in Kent, packed by hand</span></span>
+      <span class="foot__legal-links">
+        <a href="/" data-sv="Hem" data-en="Home">Home</a>
+        <a href="/delivery-returns/" data-sv="Leverans &amp; returer" data-en="Delivery &amp; returns">Delivery &amp; returns</a>
+        <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+        <a href="/contact/" data-sv="Kontakt" data-en="Contact">Contact</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/sitemap/" data-sv="Sidkarta" data-en="Sitemap">Sitemap</a>
+      </span>
+    </div>
+  </footer>
+
+<script src="/shop.js" type="module"></script>
+</body>
+</html>

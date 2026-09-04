@@ -1,0 +1,12 @@
+{
+  "name": "leafora",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Leafora — a plant shop. Static pages served by Vite.",
+  "scripts": {
+    "dev": "vite --host --port 5190 --open",
+    "build": "vite build",
+    "preview": "vite preview --host --port 4190"
+  }
+}

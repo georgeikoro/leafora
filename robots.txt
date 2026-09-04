@@ -1,0 +1,13 @@
+# Leafora
+User-agent: *
+Allow: /
+
+# Nothing useful behind these, and they are per-browser anyway
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /order/
+Disallow: /account/
+Disallow: /saved/
+Disallow: /search/
+
+Sitemap: https://leafora.example/sitemap.xml

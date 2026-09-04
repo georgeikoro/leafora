@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Community &middot; Leafora</title>
+<meta name="description" content="A board for posting about your plants, asking a question, and answering someone else's." />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#143A28" />
+<link rel="canonical" href="https://leafora.example/community/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Leafora" />
+<meta property="og:title" content="Community" />
+<meta property="og:description" content="A board for posting about your plants, asking a question, and answering someone else's." />
+<meta property="og:url" content="https://leafora.example/community/" />
+<meta property="og:image" content="https://leafora.example/assets/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="A monstera against a sage wall in soft daylight" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/cabinet-grotesk-800.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/switzer-400.woff2" crossorigin />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="stylesheet" href="/shop.css" />
+</head>
+<body class="shop">
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="/">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#CFEFA4" stroke-width="1.8"/>
+            <path d="M20 29c0-6.6 3.4-10.6 9.4-11.4-.4 6.8-3.8 10.6-9.4 11.4Z" stroke="#CFEFA4" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M19 24c-4.6 0-7.6-3-8-8.4 5 .6 8 3.4 8 8.4Z" stroke="#CFEFA4" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M20 32v-6" stroke="#CFEFA4" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__word">Leafora</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+        <a href="/care/" data-sv="Skötselguide" data-en="Care Guide">Care Guide</a>
+        <a href="/about/" data-sv="Om oss" data-en="About Us">About Us</a>
+        <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+        <a href="/community/" aria-current="page" data-sv="Gemenskap" data-en="Community">Community</a>
+      </nav>
+
+      <a class="nav__saved" href="/saved/"><span data-sv="Sparat" data-en="Saved">Saved</span><span class="nav__count nav__count--quiet" id="navCount" hidden>0</span></a>
+
+      <a class="btn btn--cream nav__cta" href="/cart/">
+        <span data-sv="Varukorg" data-en="Basket">Basket</span>
+        <span class="nav__count" id="cartCount" hidden>0</span>
+      </a>
+
+      <div class="lang lang--nav" role="group" aria-label="Language">
+        <button type="button" class="lang__btn" data-lang="sv" aria-pressed="true">SV</button>
+        <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+      <a href="/care/" data-sv="Skötselguide" data-en="Care Guide">Care Guide</a>
+      <a href="/about/" data-sv="Om oss" data-en="About Us">About Us</a>
+      <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+      <a href="/community/" aria-current="page" data-sv="Gemenskap" data-en="Community">Community</a>
+      <a href="/saved/" data-sv="Sparat" data-en="Saved">Saved</a>
+      <a href="/cart/" data-sv="Varukorg" data-en="Basket">Basket</a>
+      <a href="/search/" data-sv="Sök" data-en="Search">Search</a>
+      <a href="/contact/" data-sv="Fråga en odlare" data-en="Ask a grower">Ask a grower</a>
+    </div>
+  </header>
+<main class="page">
+  <div class="shop-head shop-head--wide">
+    <span class="shop-head__eyebrow" data-sv="Gemenskap" data-en="Community">Community</span>
+    <h1 class="shop-head__title" data-sv="Odlat av fler än en person" data-en="Grown by more than one person">Grown by more than one person</h1>
+    <p class="shop-head__lede"
+       data-sv="En plats att lägga upp ett foto, fråga vad som är fel med ett blad, eller berätta vad som fungerade för dig. Den här anslagstavlan finns i din webbläsare snarare än på en server: det du skriver här stannar på den här enheten, så ingen annan kommer se det från sin, och det överlever inte att du rensar din webbhistorik. De tre inläggen nedan är exempel, för att visa formen."
+       data-en="A place to post a photograph, ask what is wrong with a leaf, or say what worked for you. This board lives in your browser rather than on a server: what you write here stays on this device, so nobody else will see it from theirs, and it will not survive clearing your browsing data. The three posts below are examples, to show the shape of it.">
+      A place to post a photograph, ask what is wrong with a leaf, or say what worked for
+      you. This board lives in your browser rather than on a server: what you write here
+      stays on this device, so nobody else will see it from theirs, and it will not
+      survive clearing your browsing data. The three posts below are examples, to show
+      the shape of it.
+    </p>
+  </div>
+
+  <section class="acct">
+    <h2 class="sect__title" data-sv="Starta ett inlägg" data-en="Start a post">Start a post</h2>
+    <form class="cform" id="postForm">
+      <div class="cform__field">
+        <label class="cform__label" for="postName" data-sv="Ditt namn" data-en="Your name">Your name</label>
+        <input class="cform__input" id="postName" type="text" maxlength="40" required />
+      </div>
+      <div class="cform__field">
+        <label class="cform__label" for="postTopic" data-sv="Växt eller ämne, valfritt" data-en="Plant or topic, optional">Plant or topic, optional</label>
+        <input class="cform__input" id="postTopic" type="text" maxlength="60" placeholder="The Monstera Pot, propagation, a question" />
+      </div>
+      <div class="cform__field">
+        <label class="cform__label" for="postMessage" data-sv="Vad hände, eller vad vill du fråga om" data-en="What happened, or what you want to ask">What happened, or what you want to ask</label>
+        <textarea class="cform__input cform__area" id="postMessage" maxlength="600" required></textarea>
+      </div>
+      <button class="btn btn--forest" type="submit" data-sv="Publicera" data-en="Post it">Post it</button>
+      <p class="cform__small"><span data-sv="Inget här kontrolleras av en odlare innan det visas. För en fråga som behöver ett svar direkt från oss, använd" data-en="Nothing here is checked by a grower before it appears. For a question that needs an answer from us directly, use">Nothing here is checked by a grower before it appears. For a question that needs an answer from us directly, use</span> <a href="/contact/" data-sv="Fråga en odlare" data-en="Ask a grower">Ask a grower</a> <span data-sv="istället." data-en="instead.">instead.</span></p>
+    </form>
+  </section>
+
+  <section class="acct">
+    <h2 class="sect__title" data-sv="Anslagstavlan" data-en="The board">The board</h2>
+    <ul class="cboard" id="communityFeed"></ul>
+  </section>
+</main>
+
+  <footer class="foot foot--slim">
+    <div class="foot__legal">
+      <span>&copy; 2026 Leafora &middot; <span data-sv="odlat i Kent, packat för hand" data-en="grown in Kent, packed by hand">grown in Kent, packed by hand</span></span>
+      <span class="foot__legal-links">
+        <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+        <a href="/care/" data-sv="Skötselguide" data-en="Care guide">Care guide</a>
+        <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+        <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+        <a href="/contact/" data-sv="Kontakt" data-en="Contact">Contact</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/accessibility/" data-sv="Tillgänglighet" data-en="Accessibility">Accessibility</a>
+        <a href="/sitemap/" data-sv="Sidkarta" data-en="Sitemap">Sitemap</a>
+        <a href="/privacy/" data-sv="Integritet" data-en="Privacy">Privacy</a>
+        <a href="/terms/" data-sv="Villkor" data-en="Terms">Terms</a>
+        <a href="/cookies/">Cookies</a>
+        <a href="/search/" data-sv="Sök" data-en="Search">Search</a>
+        <a href="/account/" data-sv="Konto" data-en="Account">Account</a>
+      </span>
+    </div>
+  </footer>
+<script src="/shop.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Care Guide &middot; Leafora</title>
+<meta name="description" content="What to do in the first fortnight, how to read what a plant is telling you, and the four things that matter." />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#143A28" />
+<link rel="canonical" href="https://leafora.example/care/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Leafora" />
+<meta property="og:title" content="Care Guide" />
+<meta property="og:description" content="What to do in the first fortnight, how to read what a plant is telling you, and the four things that matter." />
+<meta property="og:url" content="https://leafora.example/care/" />
+<meta property="og:image" content="https://leafora.example/assets/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="A monstera against a sage wall in soft daylight" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/cabinet-grotesk-800.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/switzer-400.woff2" crossorigin />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="stylesheet" href="/shop.css" />
+</head>
+<body class="shop">
+
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="/">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#CFEFA4" stroke-width="1.8"/>
+            <path d="M20 29c0-6.6 3.4-10.6 9.4-11.4-.4 6.8-3.8 10.6-9.4 11.4Z" stroke="#CFEFA4" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M19 24c-4.6 0-7.6-3-8-8.4 5 .6 8 3.4 8 8.4Z" stroke="#CFEFA4" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M20 32v-6" stroke="#CFEFA4" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__word">Leafora</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+        <a href="/plants/" aria-current="page" data-sv="Skötselguide" data-en="Care Guide">Care Guide</a>
+        <a href="/about/" data-sv="Om oss" data-en="About Us">About Us</a>
+        <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+        <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+      </nav>
+
+      <a class="nav__saved" href="/saved/"><span data-sv="Sparat" data-en="Saved">Saved</span><span class="nav__count nav__count--quiet" id="navCount" hidden>0</span></a>
+
+      <a class="btn btn--cream nav__cta" href="/cart/">
+        <span data-sv="Varukorg" data-en="Basket">Basket</span>
+        <span class="nav__count" id="cartCount" hidden>0</span>
+      </a>
+
+      <div class="lang lang--nav" role="group" aria-label="Language">
+        <button type="button" class="lang__btn" data-lang="sv" aria-pressed="true">SV</button>
+        <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+      <a href="/plants/" aria-current="page" data-sv="Skötselguide" data-en="Care Guide">Care Guide</a>
+      <a href="/about/" data-sv="Om oss" data-en="About Us">About Us</a>
+      <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+      <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+    </div>
+  </header>
+
+<main class="page">
+  <div class="shop-head shop-head--wide">
+    <span class="shop-head__eyebrow" data-sv="Skötselguide" data-en="Care guide">Care guide</span>
+    <h1 class="shop-head__title" data-sv="Inget här är svårt. <br />Det är bara ovant." data-en="Nothing here is hard. <br />It is just unfamiliar.">Nothing here is hard.<br />It is just unfamiliar.</h1>
+    <p class="shop-head__lede"
+       data-sv="Tre fjärdedelar av växterna som dör inomhus dränks av någon som är försiktig. Här är vad du ska göra de första två veckorna, hur du läser vad en växt berättar, och de fyra sakerna som spelar roll."
+       data-en="Three quarters of the plants that die indoors are drowned by someone being careful. Here is what to do in the first fortnight, how to read what a plant is telling you, and the four things that matter.">
+      Three quarters of the plants that die indoors are drowned by someone being careful.
+      Here is what to do in the first fortnight, how to read what a plant is telling you,
+      and the four things that matter.
+    </p>
+  </div>
+
+  <section class="first">
+    <h2 class="sect__title" data-sv="De första två veckorna" data-en="The first fortnight">The first fortnight</h2>
+    <ol class="firsts">
+      <li class="first__step">
+        <span class="first__no">01</span>
+        <h3 data-sv="Plantera inte om den" data-en="Do not repot it">Do not repot it</h3>
+        <p data-sv="Den anländer i krukan den odlades i, i jorden den odlades i. Att ändra båda samma vecka som en flytt är mer än den klarar. Vänta en säsong." data-en="It arrives in the pot it was grown in, in the mix it was grown in. Changing both in the same week as a house move is more than it can take. Wait a season.">It arrives in the pot it was grown in, in the mix it was grown in. Changing both in the same week as a house move is more than it can take. Wait a season.</p>
+      </li>
+      <li class="first__step">
+        <span class="first__no">02</span>
+        <h3 data-sv="Vänta dig att tappa ett blad" data-en="Expect to lose a leaf">Expect to lose a leaf</h3>
+        <p data-sv="Det äldsta kan gulna och falla inom två veckor. Det är växten som balanserar vad den klarar av mot sitt nya ljus, inget fel." data-en="The oldest one may yellow and drop within a fortnight. That is the plant balancing what it can support against its new light, not a fault.">The oldest one may yellow and drop within a fortnight. That is the plant balancing what it can support against its new light, not a fault.</p>
+      </li>
+      <li class="first__step">
+        <span class="first__no">03</span>
+        <h3 data-sv="Hitta platsen, lämna den sedan" data-en="Find the spot, then leave it">Find the spot, then leave it</h3>
+        <p data-sv="Prova den någonstans ljust i en vecka och observera. När ny tillväxt pekar samma väg två gånger är platsen rätt. Att flytta den varje vecka är värre än ett medelmåttigt hörn." data-en="Try it somewhere bright for a week and watch. Once new growth points the same way twice, the spot is right. Moving it weekly is worse than a mediocre corner.">Try it somewhere bright for a week and watch. Once new growth points the same way twice, the spot is right. Moving it weekly is worse than a mediocre corner.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="dx" id="diagnose">
+    <div class="dx__head">
+      <span class="dx__eyebrow" data-sv="Diagnostisera" data-en="Diagnose">Diagnose</span>
+      <h2 class="dx__title" data-sv="Vad gör den?" data-en="What is it doing?">What is it doing?</h2>
+      <p class="dx__lede" data-sv="Välj vad du kan se. Det mesta är en av sex saker, och bara en av dem är brådskande." data-en="Pick what you can see. Most of it is one of six things, and only one of them is urgent.">Pick what you can see. Most of it is one of six things, and only one of them is urgent.</p>
+    </div>
+    <div class="dx__body">
+      <div class="dx__tabs" role="tablist" aria-label="Symptoms" aria-orientation="vertical">
+          <button class="dx__tab" type="button" role="tab" id="tab-yellow" aria-controls="panel-yellow" aria-selected="true" tabindex="0" data-sv="Gula blad, nedersta först" data-en="Yellow leaves, lowest first">Yellow leaves, lowest first</button>
+          <button class="dx__tab" type="button" role="tab" id="tab-crisp" aria-controls="panel-crisp" aria-selected="false" tabindex="-1" data-sv="Bruna, spröda kanter" data-en="Brown, crisp edges">Brown, crisp edges</button>
+          <button class="dx__tab" type="button" role="tab" id="tab-droop" aria-controls="panel-droop" aria-selected="false" tabindex="-1" data-sv="Hänger, men jorden är blöt" data-en="Drooping, but the soil is wet">Drooping, but the soil is wet</button>
+          <button class="dx__tab" type="button" role="tab" id="tab-leggy" aria-controls="panel-leggy" aria-selected="false" tabindex="-1" data-sv="Långa avstånd mellan små blad" data-en="Long gaps between small leaves">Long gaps between small leaves</button>
+          <button class="dx__tab" type="button" role="tab" id="tab-fuzz" aria-controls="panel-fuzz" aria-selected="false" tabindex="-1" data-sv="Vit dun där blad möter stjälk" data-en="White fuzz where leaf meets stem">White fuzz where leaf meets stem</button>
+          <button class="dx__tab" type="button" role="tab" id="tab-stalled" aria-controls="panel-stalled" aria-selected="false" tabindex="-1" data-sv="Inget nytt på månader" data-en="Nothing new for months">Nothing new for months</button>
+      </div>
+      <div class="dx__panels">
+        <div class="dx__panel" role="tabpanel" id="panel-yellow" aria-labelledby="tab-yellow">
+          <span class="dx__label" data-sv="Troligast" data-en="Most likely">Most likely</span>
+          <h3 class="dx__cause" data-sv="För mycket vatten" data-en="Too much water">Too much water</h3>
+          <div class="dx__row"><span class="dx__label" data-sv="Kontrollera detta först" data-en="Check this first">Check this first</span><p data-sv="Tryck in ett finger. Om jorden fortfarande är fuktig två dagar efter vattning, där har du svaret." data-en="Push a finger in. If the soil is still damp two days after watering, that is your answer.">Push a finger in. If the soil is still damp two days after watering, that is your answer.</p></div>
+          <div class="dx__row"><span class="dx__label" data-sv="Vad du ska göra" data-en="What to do">What to do</span><p data-sv="Låt den torka till din andra knoge före nästa vattning, och häll ut fatet varje gång. Vattna mer sällan, inte mindre grundligt. Om bara det äldsta bladet försvunnit är det bara ålder och växten mår bra." data-en="Let it dry to your second knuckle before the next drink, and tip the saucer out every time. Water less <em>often</em>, not less deeply. If only the oldest leaf has gone, that is just age and the plant is fine.">Let it dry to your second knuckle before the next drink, and tip the saucer out every time. Water less <em>often</em>, not less deeply. If only the oldest leaf has gone, that is just age and the plant is fine.</p></div>
+        </div>
+        <div class="dx__panel" role="tabpanel" id="panel-crisp" aria-labelledby="tab-crisp" hidden>
+          <span class="dx__label" data-sv="Troligast" data-en="Most likely">Most likely</span>
+          <h3 class="dx__cause" data-sv="Torr luft, eller vatten som aldrig når rötterna" data-en="Dry air, or a drink that never reaches the roots">Dry air, or a drink that never reaches the roots</h3>
+          <div class="dx__row"><span class="dx__label" data-sv="Kontrollera detta först" data-en="Check this first">Check this first</span><p data-sv="Står den ovanför ett element, bredvid ett drag, eller i vägen för en ventilation?" data-en="Is it above a radiator, beside a draught, or in the path of an air vent?">Is it above a radiator, beside a draught, or in the path of an air vent?</p></div>
+          <div class="dx__row"><span class="dx__label" data-sv="Vad du ska göra" data-en="What to do">What to do</span><p data-sv="Flytta den bort från värmen. Vattna tills det rinner ut ur dräneringshålen istället för att skvätta ovanpå, och gruppera växter tillsammans så de delar sin egen fuktighet." data-en="Move it away from the heat. Water until it runs out of the drainage holes rather than splashing the top, and group plants together so they share their own humidity.">Move it away from the heat. Water until it runs out of the drainage holes rather than splashing the top, and group plants together so they share their own humidity.</p></div>
+        </div>
+        <div class="dx__panel" role="tabpanel" id="panel-droop" aria-labelledby="tab-droop" hidden>
+          <span class="dx__label" data-sv="Troligast" data-en="Most likely">Most likely</span>
+          <h3 class="dx__cause" data-sv="Rötter som inte kan andas" data-en="Roots that cannot breathe">Roots that cannot breathe</h3>
+          <div class="dx__row"><span class="dx__label" data-sv="Kontrollera detta först" data-en="Check this first">Check this first</span><p data-sv="Lyft upp växten ur krukan. Friska rötter är fasta och ljusa; drunknade är bruna, mjuka och luktar surt." data-en="Lift the plant out of its pot. Healthy roots are firm and pale; drowned ones are brown, soft and smell sour.">Lift the plant out of its pot. Healthy roots are firm and pale; drowned ones are brown, soft and smell sour.</p></div>
+          <div class="dx__row"><span class="dx__label" data-sv="Vad du ska göra" data-en="What to do">What to do</span><p data-sv="Sluta vattna. Skär bort allt som är mosigt, plantera om i torr jord, och vänta en vecka innan nästa vattning. Det här är det enda problemet värt att agera på samma dag." data-en="Stop watering. Cut away anything mushy, repot into dry mix, and leave it a week before the next drink. This is the one problem worth acting on the same day.">Stop watering. Cut away anything mushy, repot into dry mix, and leave it a week before the next drink. This is the one problem worth acting on the same day.</p></div>
+        </div>
+        <div class="dx__panel" role="tabpanel" id="panel-leggy" aria-labelledby="tab-leggy" hidden>
+          <span class="dx__label" data-sv="Troligast" data-en="Most likely">Most likely</span>
+          <h3 class="dx__cause" data-sv="Inte tillräckligt med ljus" data-en="Not enough light">Not enough light</h3>
+          <div class="dx__row"><span class="dx__label" data-sv="Kontrollera detta först" data-en="Check this first">Check this first</span><p data-sv="Håll handen tre decimeter ovanför växten mitt på dagen. En mjukkantad skugga är tillräckligt ljus; ingen skugga alls är det inte." data-en="Hold your hand a foot above the plant at midday. A soft-edged shadow is enough light; no shadow at all is not.">Hold your hand a foot above the plant at midday. A soft-edged shadow is enough light; no shadow at all is not.</p></div>
+          <div class="dx__row"><span class="dx__label" data-sv="Vad du ska göra" data-en="What to do">What to do</span><p data-sv="Flytta den närmare fönstret, eller till ett ljusare. Vrid den ett kvarts varv varje vecka så den växer jämnt istället för att luta." data-en="Move it closer to the window, or to a brighter one. Turn it a quarter every week so it grows evenly instead of leaning.">Move it closer to the window, or to a brighter one. Turn it a quarter every week so it grows evenly instead of leaning.</p></div>
+        </div>
+        <div class="dx__panel" role="tabpanel" id="panel-fuzz" aria-labelledby="tab-fuzz" hidden>
+          <span class="dx__label" data-sv="Troligast" data-en="Most likely">Most likely</span>
+          <h3 class="dx__cause" data-sv="Mjöllus" data-en="Mealybug">Mealybug</h3>
+          <div class="dx__row"><span class="dx__label" data-sv="Kontrollera detta först" data-en="Check this first">Check this first</span><p data-sv="Titta under bladen och i vecken där stjälkarna möts. Dunet rör sig om du puttar på det." data-en="Look under the leaves and in the crooks of the stems. The fuzz moves if you nudge it.">Look under the leaves and in the crooks of the stems. The fuzz moves if you nudge it.</p></div>
+          <div class="dx__row"><span class="dx__label" data-sv="Vad du ska göra" data-en="What to do">What to do</span><p data-sv="Tryck på varje med en bomullstopp doppad i T-sprit, flytta sedan växten bort från de andra och kontrollera den varje vecka i en månad. De kommer tillbaka om du slutar för tidigt." data-en="Dab each one with a cotton bud dipped in rubbing alcohol, then move the plant away from the others and check it weekly for a month. They come back if you stop early.">Dab each one with a cotton bud dipped in rubbing alcohol, then move the plant away from the others and check it weekly for a month. They come back if you stop early.</p></div>
+        </div>
+        <div class="dx__panel" role="tabpanel" id="panel-stalled" aria-labelledby="tab-stalled" hidden>
+          <span class="dx__label" data-sv="Troligast" data-en="Most likely">Most likely</span>
+          <h3 class="dx__cause" data-sv="Vinter, eller en kruka den har vuxit ur" data-en="Winter, or a pot it has outgrown">Winter, or a pot it has outgrown</h3>
+          <div class="dx__row"><span class="dx__label" data-sv="Kontrollera detta först" data-en="Check this first">Check this first</span><p data-sv="Mellan november och februari är det här normalt. Annars, titta efter rötter som kommer ut ur dräneringshålen." data-en="Between November and February this is normal. Otherwise, look for roots coming out of the drainage holes.">Between November and February this is normal. Otherwise, look for roots coming out of the drainage holes.</p></div>
+          <div class="dx__row"><span class="dx__label" data-sv="Vad du ska göra" data-en="What to do">What to do</span><p data-sv="Om rötter tränger ut, öka en storlek, inte mer. Under växtsäsongen, gödsla varannan vecka med halva styrkan som anges på flaskan." data-en="If roots are escaping, pot up one size, no more. In the growing season feed fortnightly at half the strength printed on the bottle.">If roots are escaping, pot up one size, no more. In the growing season feed fortnightly at half the strength printed on the bottle.</p></div>
+        </div>
+      </div>
+    </div>
+    <p class="dx__foot"><span data-sv="<a href=&quot;/care/diagnose/&quot;>Öppna hela diagnossidan</a>, eller <a href=&quot;/contact/&quot;>skicka en odlare ett foto</a>. Vi svarar inom en arbetsdag." data-en="<a href=&quot;/care/diagnose/&quot;>Open the full diagnosis page</a>, or <a href=&quot;/contact/&quot;>send a grower a photograph</a>. We answer within a working day."><a href="/care/diagnose/">Open the full diagnosis page</a>, or <a href="/contact/">send a grower a photograph</a>. We answer within a working day.</span></p>
+  </section>
+
+  <section class="basics">
+    <h2 class="sect__title" data-sv="De fyra sakerna som spelar roll" data-en="The four things that matter">The four things that matter</h2>
+    <div class="basics__grid">
+      <article class="basic">
+        <h3 class="basic__title" data-sv="Ljus" data-en="Light">Light</h3>
+        <p class="basic__sub" data-sv="Den du inte kan fejka" data-en="The one you cannot fake">The one you cannot fake</p>
+        <p class="basic__body" data-sv="Varje annan instruktion på den här sidan förutsätter att växten kan se himlen. Ett fönster två meter bort är ett annat rum för en växt än ett fönster på en armlängds avstånd. Lär dig dina rum en gång så slutar du tappa växter." data-en="Every other instruction on this page assumes the plant can see the sky. A window two metres away is a different room to a plant than a window at arm&rsquo;s length. Learn your rooms once and you will stop losing plants.">Every other instruction on this page assumes the plant can see the sky. A window two metres away is a different room to a plant than a window at arm&rsquo;s length. Learn your rooms once and you will stop losing plants.</p>
+        <p class="basic__rule" data-sv="Tumregel: om du bekvämt kan läsa en bok där mitt på dagen utan lampa kommer det mesta vi säljer att leva." data-en="Rule of thumb: if you can read a book there comfortably at midday without a lamp, most of what we sell will live.">Rule of thumb: if you can read a book there comfortably at midday without a lamp, most of what we sell will live.</p>
+      </article>
+      <article class="basic">
+        <h3 class="basic__title" data-sv="Vatten" data-en="Water">Water</h3>
+        <p class="basic__sub" data-sv="Ett schema är problemet, inte lösningen" data-en="A schedule is the problem, not the solution">A schedule is the problem, not the solution</p>
+        <p class="basic__body" data-sv="En växt i en kall lägenhet i februari behöver en bråkdel av vad samma växt behöver i juli. Att vattna varje söndag oavsett är hur de flesta krukväxter dränks." data-en="A plant in a cold flat in February needs a fraction of what the same plant needs in July. Watering every Sunday regardless is how most houseplants drown.">A plant in a cold flat in February needs a fraction of what the same plant needs in July. Watering every Sunday regardless is how most houseplants drown.</p>
+        <p class="basic__rule" data-sv="Tumregel: finger in till andra knogen. Torrt, vattna den. Fuktigt, kom tillbaka om tre dagar." data-en="Rule of thumb: finger in to the second knuckle. Dry, water it. Damp, come back in three days.">Rule of thumb: finger in to the second knuckle. Dry, water it. Damp, come back in three days.</p>
+      </article>
+      <article class="basic">
+        <h3 class="basic__title" data-sv="Luftfuktighet" data-en="Humidity">Humidity</h3>
+        <p class="basic__sub" data-sv="Värt mindre ansträngning än du tror" data-en="Worth less effort than you think">Worth less effort than you think</p>
+        <p class="basic__body" data-sv="Att duscha bladen känns produktivt, men fukten avdunstar inom minuter. Vad som hjälper är att hålla växter borta från element och ställa dem tillräckligt nära varandra för att dela luften de avger." data-en="Misting feels productive, but the moisture evaporates within minutes. What helps is keeping plants away from radiators and standing them close enough together to share the air they transpire.">Misting feels productive, but the moisture evaporates within minutes. What helps is keeping plants away from radiators and standing them close enough together to share the air they transpire.</p>
+        <p class="basic__rule" data-sv="Tumregel: spröda bruna kanter betyder torr luft. Inget annat gör det." data-en="Rule of thumb: crisp brown edges mean dry air. Nothing else does.">Rule of thumb: crisp brown edges mean dry air. Nothing else does.</p>
+      </article>
+      <article class="basic">
+        <h3 class="basic__title" data-sv="Gödsling" data-en="Feeding">Feeding</h3>
+        <p class="basic__sub" data-sv="Bara medan den växer" data-en="Only while it is growing">Only while it is growing</p>
+        <p class="basic__body" data-sv="Gödsel är inte medicin. En kämpande växt i ett mörkt hörn behöver inte gödsel, den behöver ljus. En frisk växt som sätter blad behöver det." data-en="Fertiliser is not medicine. A struggling plant in a dark corner does not need feeding, it needs light. A healthy plant putting out leaves does.">Fertiliser is not medicine. A struggling plant in a dark corner does not need feeding, it needs light. A healthy plant putting out leaves does.</p>
+        <p class="basic__rule" data-sv="Tumregel: varannan vecka med halv styrka, mars till september, sluta sedan." data-en="Rule of thumb: fortnightly at half strength, March to September, then stop.">Rule of thumb: fortnightly at half strength, March to September, then stop.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="species">
+    <h2 class="sect__title" data-sv="Skötsel per växt" data-en="Care by plant">Care by plant</h2>
+    <div class="species__grid">
+      <a class="species__card" href="/care/monstera/">
+        <img src="/assets/card-monstera.jpg" width="673" height="900" loading="lazy" decoding="async" alt="Monstera deliciosa in a speckled cream pot" />
+        <div class="species__meta">
+          <span class="species__kicker">Monstera deliciosa</span>
+          <h3 class="species__name" data-sv="Ljust, indirekt &middot; vattna när torrt" data-en="Bright, indirect &middot; water when dry">Bright, indirect &middot; water when dry</h3>
+          <p data-sv="Sprickor uppstår med ålder och ljus, inte med gödsling. Luftrötter kan stoppas tillbaka i krukan eller lämnas ifred." data-en="Splits appear with age and light, not with feeding. Aerial roots can be tucked back into the pot or left alone.">Splits appear with age and light, not with feeding. Aerial roots can be tucked back into the pot or left alone.</p>
+        </div>
+      </a>
+      <a class="species__card" href="/care/ficus-lyrata/">
+        <img src="/assets/card-fig.jpg" width="673" height="900" loading="lazy" decoding="async" alt="Fiddle leaf fig on a walnut stand" />
+        <div class="species__meta">
+          <span class="species__kicker">Ficus lyrata</span>
+          <h3 class="species__name" data-sv="Ljust &middot; vattna varje vecka" data-en="Bright &middot; water weekly">Bright &middot; water weekly</h3>
+          <p data-sv="Den avskyr att flyttas och visar det två veckor senare. Damma av bladen; det är så den försörjer sig." data-en="It hates being moved and shows it a fortnight later. Dust the leaves; they are how it earns a living.">It hates being moved and shows it a fortnight later. Dust the leaves; they are how it earns a living.</p>
+        </div>
+      </a>
+      <a class="species__card" href="/care/cuttings-in-water/">
+        <img src="/assets/card-glass.jpg" width="673" height="900" loading="lazy" decoding="async" alt="Monstera cutting rooting in a glass vessel" />
+        <div class="species__meta">
+          <span class="species__kicker" data-sv="Sticklingar i vatten" data-en="Cuttings in water">Cuttings in water</span>
+          <h3 class="species__name" data-sv="Vilket ljus som helst &middot; byt vattnet" data-en="Any light &middot; change the water">Any light &middot; change the water</h3>
+          <p data-sv="Färskt vatten varannan vecka, rötterna alltid täckta. Flytta den till jord först när rötterna är längre än din hand." data-en="Fresh water every fortnight, roots always covered. Move it to soil only when the roots are longer than your hand.">Fresh water every fortnight, roots always covered. Move it to soil only when the roots are longer than your hand.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <aside class="shop-note">
+    <h2 class="shop-note__title" data-sv="Vi vill hellre att du frågar än gissar" data-en="We would rather you asked than guessed">We would rather you asked than guessed</h2>
+    <p data-sv="Ett foto av växten, och ett av rummet den står i, är oftast allt en odlare behöver. Det finns ingen dum fråga, och ingen kostnad." data-en="A photograph of the plant, and one of the room it stands in, is usually all a grower needs. There is no wrong question, and no charge.">A photograph of the plant, and one of the room it stands in, is usually all a grower needs. There is no wrong question, and no charge.</p>
+    <a class="btn btn--forest" href="/contact/"><span data-sv="Fråga en odlare" data-en="Ask a grower">Ask a grower</span>
+      <svg class="arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </aside>
+</main>
+
+  <footer class="foot foot--slim">
+    <div class="foot__legal">
+      <span>&copy; 2026 Leafora &middot; <span data-sv="odlat i Kent, packat för hand" data-en="grown in Kent, packed by hand">grown in Kent, packed by hand</span></span>
+      <span class="foot__legal-links">
+        <a href="/" data-sv="Hem" data-en="Home">Home</a>
+        <a href="/delivery-returns/" data-sv="Leverans &amp; returer" data-en="Delivery &amp; returns">Delivery &amp; returns</a>
+        <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+        <a href="/contact/" data-sv="Kontakt" data-en="Contact">Contact</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/sitemap/" data-sv="Sidkarta" data-en="Sitemap">Sitemap</a>
+      </span>
+    </div>
+  </footer>
+
+<script src="/shop.js" type="module"></script>
+</body>
+</html>

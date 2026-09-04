@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gift cards &middot; Leafora</title>
+<meta name="description" content="A gift card for anyone hard to choose a plant for. No expiry, redeemable on anything." />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#143A28" />
+<link rel="canonical" href="https://leafora.example/gift-cards/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Leafora" />
+<meta property="og:title" content="Gift cards" />
+<meta property="og:description" content="A gift card for anyone hard to choose a plant for. No expiry, redeemable on anything." />
+<meta property="og:url" content="https://leafora.example/gift-cards/" />
+<meta property="og:image" content="https://leafora.example/assets/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="A monstera against a sage wall in soft daylight" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/cabinet-grotesk-800.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/switzer-400.woff2" crossorigin />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="stylesheet" href="/shop.css" />
+</head>
+<body class="shop">
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="/">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#CFEFA4" stroke-width="1.8"/>
+            <path d="M20 29c0-6.6 3.4-10.6 9.4-11.4-.4 6.8-3.8 10.6-9.4 11.4Z" stroke="#CFEFA4" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M19 24c-4.6 0-7.6-3-8-8.4 5 .6 8 3.4 8 8.4Z" stroke="#CFEFA4" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M20 32v-6" stroke="#CFEFA4" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__word">Leafora</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+        <a href="/care/" data-sv="Skötselguide" data-en="Care Guide">Care Guide</a>
+        <a href="/about/" data-sv="Om oss" data-en="About Us">About Us</a>
+        <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+        <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+      </nav>
+
+      <a class="nav__saved" href="/saved/"><span data-sv="Sparat" data-en="Saved">Saved</span><span class="nav__count nav__count--quiet" id="navCount" hidden>0</span></a>
+
+      <a class="btn btn--cream nav__cta" href="/cart/">
+        <span data-sv="Varukorg" data-en="Basket">Basket</span>
+        <span class="nav__count" id="cartCount" hidden>0</span>
+      </a>
+
+      <div class="lang lang--nav" role="group" aria-label="Language">
+        <button type="button" class="lang__btn" data-lang="sv" aria-pressed="true">SV</button>
+        <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+      <a href="/care/" data-sv="Skötselguide" data-en="Care Guide">Care Guide</a>
+      <a href="/about/" data-sv="Om oss" data-en="About Us">About Us</a>
+      <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+      <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+      <a href="/saved/" data-sv="Sparat" data-en="Saved">Saved</a>
+      <a href="/cart/" data-sv="Varukorg" data-en="Basket">Basket</a>
+      <a href="/search/" data-sv="Sök" data-en="Search">Search</a>
+      <a href="/contact/" data-sv="Fråga en odlare" data-en="Ask a grower">Ask a grower</a>
+    </div>
+  </header>
+<main class="page">
+  <div class="shop-head shop-head--wide">
+    <span class="shop-head__eyebrow" data-sv="Presentkort" data-en="Gift cards">Gift cards</span>
+    <h1 class="shop-head__title" data-sv="Låt dem välja växten" data-en="Let them pick the plant">Let them pick the plant</h1>
+    <p class="shop-head__lede"
+       data-sv="En växt är ett tioårigt beslut om ett hörn av någons hem, vilket gör den svår att välja åt en annan person. Ett kort kringgår det, och det anländer aldrig i en kall skåpbil."
+       data-en="A plant is a ten-year decision about a corner of somebody's home, which makes it a hard thing to choose for another person. A card sidesteps that, and it never arrives in a cold van.">
+      A plant is a ten-year decision about a corner of somebody's home, which makes it a
+      hard thing to choose for another person. A card sidesteps that, and it never arrives
+      in a cold van.
+    </p>
+  </div>
+
+  <div class="gift">
+    <div class="gift__preview">
+      <div class="giftcard" id="giftcard">
+        <div class="giftcard__top">
+          <span class="giftcard__mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M20 29c0-6.6 3.4-10.6 9.4-11.4-.4 6.8-3.8 10.6-9.4 11.4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+              <path d="M19 24c-4.6 0-7.6-3-8-8.4 5 .6 8 3.4 8 8.4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+              <path d="M20 32v-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="giftcard__brand">Leafora</span>
+        </div>
+        <span class="giftcard__value" id="giftValue">&pound;50</span>
+        <p class="giftcard__to" id="giftTo" data-sv="Till någon som kunde behöva en växt" data-en="For someone who could use a plant">For someone who could use a plant</p>
+        <span class="giftcard__foot" data-sv="Går aldrig ut &middot; kan användas på allt vi säljer" data-en="Never expires &middot; redeemable on anything we sell">Never expires &middot; redeemable on anything we sell</span>
+      </div>
+      <p class="gift__note" data-sv="Det här är vad som hamnar i deras inkorg, eller på kartongpapper om du hellre vill posta det." data-en="This is what lands in their inbox, or on card stock if you would rather post it.">This is what lands in their inbox, or on card stock if you would rather post it.</p>
+    </div>
+
+    <form class="cform gift__form" id="giftForm" novalidate>
+      <fieldset class="opts">
+        <legend class="opts__legend" data-sv="Belopp" data-en="Amount">Amount</legend>
+        <div class="gift__amounts" id="giftAmounts">
+          <label class="gift__amount"><input type="radio" name="amount" value="25" /><span>&pound;25</span></label>
+          <label class="gift__amount"><input type="radio" name="amount" value="50" checked /><span>&pound;50</span></label>
+          <label class="gift__amount"><input type="radio" name="amount" value="100" /><span>&pound;100</span></label>
+          <label class="gift__amount"><input type="radio" name="amount" value="164" /><span>&pound;164</span></label>
+        </div>
+        <p class="cform__hint" data-sv="&pound;164 täcker den största växten vi säljer, levererad." data-en="&pound;164 covers the largest plant we sell, delivered.">&pound;164 covers the largest plant we sell, delivered.</p>
+      </fieldset>
+
+      <div class="cform__field">
+        <label class="cform__label" for="giftName" data-sv="Mottagare" data-en="Recipient">Recipient</label>
+        <input class="cform__input" id="giftName" name="to" type="text" placeholder="Their name" required />
+      </div>
+      <div class="cform__field">
+        <label class="cform__label" for="giftEmail" data-sv="Deras e-post" data-en="Their email">Their email</label>
+        <input class="cform__input" id="giftEmail" name="email" type="email" inputmode="email" required />
+      </div>
+      <div class="cform__field">
+        <label class="cform__label" for="giftWhen" data-sv="Leveransdatum" data-en="Delivery date">Delivery date</label>
+        <input class="cform__input" id="giftWhen" name="when" type="date" />
+        <p class="cform__hint" data-sv="Lämna det tomt så skickas kortet direkt." data-en="Leave it blank and the card is sent immediately.">Leave it blank and the card is sent immediately.</p>
+      </div>
+      <div class="cform__field">
+        <label class="cform__label" for="giftMessage" data-sv="Meddelande" data-en="Message">Message</label>
+        <textarea class="cform__input cform__area" id="giftMessage" name="message" rows="4" placeholder="Optional. It prints on the card."></textarea>
+      </div>
+
+      <button class="btn btn--forest btn--lg" type="submit"><span data-sv="Köp kortet" data-en="Buy the card">Buy the card</span> <svg class="arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <p class="cform__small" data-sv="Inget utgångsdatum, ingen månadsavgift, och det kan användas över flera beställningar." data-en="No expiry date, no monthly fee, and it can be spent across several orders.">No expiry date, no monthly fee, and it can be spent across several orders.</p>
+    </form>
+  </div>
+
+  <section class="gift__how">
+    <h2 class="sect__title" data-sv="Så fungerar det" data-en="How it works">How it works</h2>
+    <ol class="firsts">
+      <li class="first__step">
+        <span class="first__no">01</span>
+        <h3 data-sv="De får en kod" data-en="They get a code">They get a code</h3>
+        <p data-sv="Via e-post på datumet du väljer, eller tryckt på kartongpapper och postat till dig att ge bort. Den tryckta versionen kostar inget extra och tar tre dagar." data-en="By email on the date you choose, or printed on card stock and posted to you to hand over. The printed one costs nothing extra and takes three days.">By email on the date you choose, or printed on card stock and posted to you to hand over. The printed one costs nothing extra and takes three days.</p>
+      </li>
+      <li class="first__step">
+        <span class="first__no">02</span>
+        <h3 data-sv="De väljer i sin egen takt" data-en="They choose in their own time">They choose in their own time</h3>
+        <p data-sv="Inget utgångsdatum. Om de vill vänta till våren reser en växt bättre och slår sig till ro snabbare vid den tiden på året oavsett." data-en="No expiry. If they want to wait until spring, a plant travels better and settles in faster at that time of year regardless.">No expiry. If they want to wait until spring, a plant travels better and settles in faster at that time of year regardless.</p>
+      </li>
+      <li class="first__step">
+        <span class="first__no">03</span>
+        <h3 data-sv="Det som blir över finns kvar" data-en="Anything left over stays">Anything left over stays</h3>
+        <p data-sv="Använd det över så många beställningar som det tar. Ett saldo kan gå till en växt nu och en kruka om sex månader." data-en="Spend it across as many orders as it takes. A balance can go on a plant now and a pot in six months.">Spend it across as many orders as it takes. A balance can go on a plant now and a pot in six months.</p>
+      </li>
+    </ol>
+  </section>
+
+  <aside class="shop-note">
+    <h2 class="shop-note__title" data-sv="Fler frågor om presentkort" data-en="More gift card questions">More gift card questions</h2>
+    <p data-sv="Går de ut, kan de kombineras med annat, vad händer om saldot inte räcker: svaren finns samlade på en sida." data-en="Do they expire, can they be combined, what happens if the balance falls short: the answers are gathered on one page.">Do they expire, can they be combined, what happens if the balance falls short: the answers are gathered on one page.</p>
+    <a class="btn btn--forest" href="/faq/">FAQ <svg class="arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </aside>
+</main>
+
+  <footer class="foot foot--slim">
+    <div class="foot__legal">
+      <span>&copy; 2026 Leafora &middot; <span data-sv="odlat i Kent, packat för hand" data-en="grown in Kent, packed by hand">grown in Kent, packed by hand</span></span>
+      <span class="foot__legal-links">
+        <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+        <a href="/care/" data-sv="Skötselguide" data-en="Care guide">Care guide</a>
+        <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+        <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+        <a href="/contact/" data-sv="Kontakt" data-en="Contact">Contact</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/accessibility/" data-sv="Tillgänglighet" data-en="Accessibility">Accessibility</a>
+        <a href="/sitemap/" data-sv="Sidkarta" data-en="Sitemap">Sitemap</a>
+        <a href="/privacy/" data-sv="Integritet" data-en="Privacy">Privacy</a>
+        <a href="/terms/" data-sv="Villkor" data-en="Terms">Terms</a>
+        <a href="/cookies/">Cookies</a>
+        <a href="/search/" data-sv="Sök" data-en="Search">Search</a>
+        <a href="/account/" data-sv="Konto" data-en="Account">Account</a>
+      </span>
+    </div>
+  </footer>
+<script src="/shop.js" type="module"></script>
+</body>
+</html>

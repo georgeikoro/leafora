@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Leafora &middot; Bring Nature Home</title>
+<meta name="description" content="Plants grown slowly in Kent and sold only once they can handle an ordinary room. With a care card, a grower to ask, and thirty days to change your mind." />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#143A28" />
+<link rel="canonical" href="https://leafora.example/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Leafora" />
+<meta property="og:title" content="Leafora · Bring Nature Home" />
+<meta property="og:description" content="Plants grown slowly in Kent and sold only once they can handle an ordinary room. With a care card, a grower to ask, and thirty days to change your mind." />
+<meta property="og:url" content="https://leafora.example/" />
+<meta property="og:image" content="https://leafora.example/assets/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="A monstera against a sage wall in soft daylight" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/cabinet-grotesk-800.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/switzer-400.woff2" crossorigin />
+<link rel="preload" as="image" href="/assets/plant-wide.jpg" />
+<link rel="prefetch" as="image" href="/assets/plant-xray.jpg" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="stylesheet" href="/shop.css" />
+</head>
+<body>
+
+<div class="stage">
+  <div class="shell">
+
+    <!-- ── Nav ─────────────────────────────────────────────── -->
+    <header class="nav" data-reveal>
+      <a class="brand" href="/">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#CFEFA4" stroke-width="1.8"/>
+            <path d="M20 29c0-6.6 3.4-10.6 9.4-11.4-.4 6.8-3.8 10.6-9.4 11.4Z" stroke="#CFEFA4" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M19 24c-4.6 0-7.6-3-8-8.4 5 .6 8 3.4 8 8.4Z" stroke="#CFEFA4" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M20 32v-6" stroke="#CFEFA4" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__word">Leafora</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+        <a href="/care/" data-sv="Skötselguide" data-en="Care Guide">Care Guide</a>
+        <a href="/about/" data-sv="Om oss" data-en="About Us">About Us</a>
+        <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+        <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+      </nav>
+
+      <a class="btn btn--cream nav__cta" href="/plants/">
+        <span data-sv="Utforska växter" data-en="Explore Plants">Explore Plants</span>
+        <svg class="arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+      <div class="lang lang--nav" role="group" aria-label="Language">
+        <button type="button" class="lang__btn" data-lang="sv" aria-pressed="true">SV</button>
+        <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+      <a href="/care/" data-sv="Skötselguide" data-en="Care Guide">Care Guide</a>
+      <a href="/about/" data-sv="Om oss" data-en="About Us">About Us</a>
+      <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+      <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+      <a href="/saved/" data-sv="Sparat" data-en="Saved">Saved</a>
+      <a href="/cart/" data-sv="Varukorg" data-en="Basket">Basket</a>
+      <a href="/search/" data-sv="Sök" data-en="Search">Search</a>
+      <a href="/contact/" data-sv="Fråga en odlare" data-en="Ask a grower">Ask a grower</a>
+      <a class="btn btn--lime" href="/plants/"><span data-sv="Utforska växter" data-en="Explore Plants">Explore Plants</span>
+        <svg class="arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <!-- ── Hero ────────────────────────────────────────────── -->
+    <main class="hero">
+
+      <!-- Copy -->
+      <div class="copy">
+        <h1 class="title" data-reveal style="--d:.06s" id="heroTitle"
+            data-sv="Ta hem <br />naturen. <br />Vi hjälper dig <br />att behålla den."
+            data-en="Bring Nature <br />Home. <br />We Will Help <br />You Keep It.">
+          Ta hem<br />
+          naturen.<br />
+          Vi hjälper dig<br />
+          att behålla den.
+        </h1>
+
+        <p class="lede" data-reveal style="--d:.14s" id="heroLede"
+           data-sv="Nio växter, odlade långsamt i Kent <br />och sålda först när de är redo <br />för ett vanligt rum, ditt inkluderat."
+           data-en="Nine plants, grown slowly in Kent <br />and sold only once they are ready <br />for an ordinary room, including yours.">
+          Nio växter, odlade långsamt i Kent<br />
+          och sålda först när de är redo<br />
+          för ett vanligt rum, ditt inkluderat.
+        </p>
+
+        <div class="cta-row" data-reveal style="--d:.22s">
+          <a class="btn btn--lime btn--lg" href="/plants/">
+            <span id="heroCta" data-sv="Utforska växter" data-en="Explore Plants">Utforska växter</span>
+            <svg class="arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="proof" data-reveal style="--d:.3s">
+          <ul class="avatars" aria-label="Plant parents in our community">
+            <li><img src="/assets/avatar-1.jpg" width="320" height="320" loading="lazy" decoding="async" alt="" /></li>
+            <li><img src="/assets/avatar-2.jpg" width="320" height="320" loading="lazy" decoding="async" alt="" /></li>
+            <li><img src="/assets/avatar-3.jpg" width="320" height="320" loading="lazy" decoding="async" alt="" /></li>
+          </ul>
+
+          <span class="proof__divider" aria-hidden="true"></span>
+
+          <p class="proof__stat">
+            <strong>20K+</strong>
+            <span id="heroStatLabel" data-sv="Nöjda växtägare" data-en="Happy Plant Parents">Nöjda växtägare</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Visual -->
+      <div class="visual" data-reveal style="--d:.1s">
+        <div class="visual__inner" data-parallax>
+          <span class="glow" aria-hidden="true"></span>
+
+        </div>
+      </div>
+
+      <!-- Side column -->
+      <aside class="side">
+        <div class="side__top" data-reveal style="--d:.2s">
+          <span class="side__rule" aria-hidden="true"></span>
+          <p class="side__kicker" id="heroSideKicker" data-sv="Värt att veta" data-en="Worth knowing">Värt att veta</p>
+          <h2 class="side__title" id="heroSideTitle"
+              data-sv="Det förändrar <br />rummet" data-en="It changes <br />the room">Det förändrar<br />rummet</h2>
+          <p class="side__body" id="heroSideBody"
+             data-sv="Inte luften, oavsett vad <br />etiketten påstår. Det en växt ger <br />är en plats att vila blicken på."
+             data-en="Not the air, regardless of what <br />the label claims. What a plant offers <br />is somewhere to rest your eyes.">
+            Inte luften, oavsett vad<br />
+            etiketten påstår. Det en växt ger<br />
+            är en plats att vila blicken på.
+          </p>
+
+          <a class="learn" href="/journal/what-a-plant-does-to-a-room/">
+            <span class="learn__text" id="heroLearnText"
+                  data-sv="Läs vad växter <br />gör för ett rum" data-en="Read what plants <br />do for a room">Läs vad växter<br />gör för ett rum</span>
+            <span class="learn__icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" fill="none"><path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
+        </div>
+      </aside>
+
+      <div class="cue">
+        <span class="cue__label" id="heroCue" data-sv="Skrolla för att öppna" data-en="Scroll to open">Skrolla för att öppna</span>
+        <span class="cue__line" aria-hidden="true"></span>
+      </div>
+    </main>
+
+    <div class="rings" aria-hidden="true">
+            <span style="--d:100%"></span>
+          </div>
+
+    <!-- One circle, opening from the hero straight out to the full screen. -->
+    <div class="reveal" aria-hidden="true">
+      <span class="reveal__photo"></span>
+    </div>
+
+    <!-- one orbit, four icons riding it together -->
+    <div class="orbits" aria-hidden="true">
+      <span class="orbit" style="--d:100%; --dur:52s">
+        <span class="arm" style="--a:-14deg"><span class="badge">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4 17 7M7 17l-1.6 1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </span></span>
+        <span class="arm" style="--a:76deg"><span class="badge">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5c3.6 4.2 6 7.6 6 10.4a6 6 0 1 1-12 0c0-2.8 2.4-6.2 6-10.4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </span></span>
+        <span class="arm" style="--a:166deg"><span class="badge">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M20 4c0 9-4.7 14.5-12 15 0-8.6 4.4-14 12-15Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 19c.6-5.6 3.6-9.8 8.6-12.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </span></span>
+        <span class="arm" style="--a:256deg"><span class="badge">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 20.4s-7.6-4.6-7.6-9.6A4.4 4.4 0 0 1 12 8.4a4.4 4.4 0 0 1 7.6 2.4c0 5-7.6 9.6-7.6 9.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </span></span>
+      </span>
+    </div>
+
+    <!-- Once the photograph is open, the cursor carries an x-ray of the pot -->
+    <span class="xray" aria-hidden="true"></span>
+    <!-- Callouts, held back until the photograph is fully open -->
+    <div class="labels" aria-hidden="true">
+      <svg class="leads" preserveAspectRatio="none">
+        <path class="leads__case" data-case="air" />
+        <path class="leads__case" data-case="care" />
+        <path class="leads__case" data-case="soil" />
+        <path class="leads__line" data-lead="air" />
+        <path class="leads__line" data-lead="care" />
+        <path class="leads__line" data-lead="soil" />
+        <circle class="leads__dot" data-dot="air" r="4" />
+        <circle class="leads__dot" data-dot="care" r="4" />
+        <circle class="leads__dot" data-dot="soil" r="4" />
+      </svg>
+      <article class="label label--air">
+        <span class="label__icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M20 4c0 9-4.7 14.5-12 15 0-8.6 4.4-14 12-15Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8 19c.6-5.6 3.6-9.8 8.6-12.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </span>
+        <h3 data-sv="Bladsprickor" data-en="Fenestrations">Fenestrations</h3>
+        <p data-sv="De sprickorna släpper ljus ner till bladen under." data-en="Those splits let light reach the leaves below.">Those splits let light reach the leaves below.</p>
+      </article>
+
+      <article class="label label--care">
+        <span class="label__icon">
+          <svg viewBox="0 0 28 28" fill="none"><path d="M14 25v-9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M14 16c0-4.4 3-7.4 8-8-.4 5.2-3.2 8-8 8Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M13 19c-4.2 0-7-2.6-7.4-7.4 4.6.6 7.4 3.2 7.4 7.4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+        </span>
+        <h3 data-sv="Ett nytt blad" data-en="A new leaf">A new leaf</h3>
+        <p data-sv="Hårt rullat idag, helt utvecklat om ungefär två veckor." data-en="Rolled tight today, fully open in about two weeks.">Rolled tight today, fully open in about two weeks.</p>
+      </article>
+
+      <article class="label label--soil">
+        <span class="label__icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5c3.6 4.2 6 7.6 6 10.4a6 6 0 1 1-12 0c0-2.8 2.4-6.2 6-10.4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+        </span>
+        <h3 data-sv="Rötter i arbete" data-en="Roots at work">Roots at work</h3>
+        <p data-sv="Håll muspekaren över krukan för att se vad som händer under jorden." data-en="Hover the pot to see what happens under the soil.">Hover the pot to see what happens under the soil.</p>
+      </article>
+    </div>
+  </div>
+
+  <span class="stage__end" aria-hidden="true"></span>
+</div>
+
+<!-- ── Next section: the collection ─────────────────────────────────────── -->
+<section class="grove">
+  <span class="grove__mark" aria-hidden="true">
+    <svg viewBox="0 0 48 48" fill="none">
+      <path d="M24 46V7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M24 4c-8.6 7.6-13 14-13 18.6a13 13 0 0 0 26 0C37 18 32.6 11.6 24 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M24 16 16.6 10.6M24 24 13.4 17.4M24 31.6 15.6 26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M24 16 31.4 10.6M24 24l6-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M32.8 8.4c3.6 4.6 5.6 7.7 5.6 9.9a5.6 5.6 0 1 1-11.2 0c0-2.2 2-5.3 5.6-9.9Z" fill="var(--paper)" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M30.2 19.6a2.8 2.8 0 0 0 2.6 2.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+    </svg>
+  </span>
+
+  <h2 class="grove__title" data-sv="Odlade långsamt, <br />sålda när de är redo" data-en="Grown slowly, <br />sold when ready">Grown slowly,<br />sold when ready</h2>
+
+  <ul class="grove__grid">
+    <li class="plant" data-slug="the-fig-bundle">
+      <img class="plant__img" src="/assets/card-fig.jpg" width="673" height="900" loading="lazy" decoding="async" alt="Fiddle leaf fig in a terracotta pot on a wooden stand" />
+      <img class="plant__img plant__img--alt" src="/assets/card-fig-alt.jpg" width="673" height="900" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+      <span class="plant__chip" data-sv="Enkel skötsel" data-en="Easy care">Easy care</span>
+      <button class="plant__save" type="button" data-slug="the-fig-bundle" aria-label="Save fiddle leaf fig">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 20.4s-7.6-4.6-7.6-9.6A4.4 4.4 0 0 1 12 8.4a4.4 4.4 0 0 1 7.6 2.4c0 5-7.6 9.6-7.6 9.6Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="plant__meta">
+        <span class="plant__kicker" data-sv="Ficus lyrata" data-en="Ficus lyrata">Ficus lyrata</span>
+        <h3 class="plant__name">The Fig Bundle</h3>
+      </div>
+      <a class="plant__cta" href="/plants/the-fig-bundle/">
+        <span class="plant__cta-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M20 4c0 9-4.7 14.5-12 15 0-8.6 4.4-14 12-15Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 19c.6-5.6 3.6-9.8 8.6-12.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </span>
+        <span class="plant__cta-text" data-sv="Ta hem den" data-en="Bring it home">Bring it home</span>
+        <svg class="plant__cta-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </li>
+
+    <li class="plant" data-slug="the-root-vessel">
+      <img class="plant__img" src="/assets/card-glass.jpg" width="673" height="900" loading="lazy" decoding="async" alt="Monstera growing in a glass vessel with visible roots" />
+      <img class="plant__img plant__img--alt" src="/assets/card-glass-alt.jpg" width="673" height="900" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+      <span class="plant__chip" data-sv="Lite vatten" data-en="Low water">Low water</span>
+      <button class="plant__save" type="button" data-slug="the-root-vessel" aria-label="Save monstera in glass">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 20.4s-7.6-4.6-7.6-9.6A4.4 4.4 0 0 1 12 8.4a4.4 4.4 0 0 1 7.6 2.4c0 5-7.6 9.6-7.6 9.6Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="plant__meta">
+        <span class="plant__kicker" data-sv="Monstera, barrot" data-en="Monstera, bare root">Monstera, bare root</span>
+        <h3 class="plant__name">The Root Vessel</h3>
+      </div>
+      <a class="plant__cta" href="/plants/the-root-vessel/">
+        <span class="plant__cta-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5c3.6 4.2 6 7.6 6 10.4a6 6 0 1 1-12 0c0-2.8 2.4-6.2 6-10.4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="plant__cta-text" data-sv="Ta hem den" data-en="Bring it home">Bring it home</span>
+        <svg class="plant__cta-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </li>
+
+    <li class="plant" data-slug="the-monstera-pot">
+      <img class="plant__img" src="/assets/card-monstera.jpg" width="673" height="900" loading="lazy" decoding="async" alt="Monstera deliciosa in a speckled ceramic pot" />
+      <img class="plant__img plant__img--alt" src="/assets/card-monstera-alt.jpg" width="673" height="900" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+      <span class="plant__chip" data-sv="Starkt ljus" data-en="Bright light">Bright light</span>
+      <button class="plant__save" type="button" data-slug="the-monstera-pot" aria-label="Save monstera deliciosa">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 20.4s-7.6-4.6-7.6-9.6A4.4 4.4 0 0 1 12 8.4a4.4 4.4 0 0 1 7.6 2.4c0 5-7.6 9.6-7.6 9.6Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="plant__meta">
+        <span class="plant__kicker" data-sv="Monstera deliciosa" data-en="Monstera deliciosa">Monstera deliciosa</span>
+        <h3 class="plant__name">The Monstera Pot</h3>
+      </div>
+      <a class="plant__cta" href="/plants/the-monstera-pot/">
+        <span class="plant__cta-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4 17 7M7 17l-1.6 1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </span>
+        <span class="plant__cta-text" data-sv="Ta hem den" data-en="Bring it home">Bring it home</span>
+        <svg class="plant__cta-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </li>
+  </ul>
+
+  <a class="care__link care__link--dark grove__all" href="/plants/">
+    <span data-sv="Se alla växter vi odlar" data-en="See every plant we grow">See every plant we grow</span>
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+</section>
+
+
+<!-- ── Care: what happens after the plant arrives ───────────────────────── -->
+<section class="care">
+  <div class="care__inner">
+    <div class="care__media" data-inview>
+      <img class="care__img" src="/assets/care.jpg" width="900" height="1200" loading="lazy" decoding="async"
+           alt="A monstera being watered with a brass mister against a sage backdrop" />
+      <div class="care__tag" data-inview style="--d:.14s">
+        <span class="care__tag-eyebrow" data-sv="Skötselkort" data-en="Care card">Care card</span>
+        <span class="care__tag-name">Monstera deliciosa</span>
+        <span class="care__tag-line" data-sv="Ljust, indirekt &middot; vattna när torrt" data-en="Bright, indirect &middot; water when dry">Bright, indirect &middot; water when dry</span>
+      </div>
+
+      <div class="care__gauge" data-inview style="--d:.26s">
+        <span class="care__gauge-head">
+          <span class="care__gauge-label" data-sv="Fukt" data-en="Moisture">Moisture</span>
+          <span class="care__gauge-value">38%</span>
+        </span>
+        <svg class="care__gauge-plot" viewBox="0 0 108 34" fill="none" aria-hidden="true">
+          <rect x="0"   y="4"  width="9" height="30" rx="4.5" fill="currentColor" opacity=".9"/>
+          <rect x="14"  y="8"  width="9" height="26" rx="4.5" fill="currentColor" opacity=".9"/>
+          <rect x="28"  y="13" width="9" height="21" rx="4.5" fill="currentColor" opacity=".9"/>
+          <rect x="42"  y="17" width="9" height="17" rx="4.5" fill="currentColor" opacity=".9"/>
+          <rect x="56"  y="21" width="9" height="13" rx="4.5" fill="currentColor" opacity=".9"/>
+          <rect x="70"  y="24" width="9" height="10" rx="4.5" fill="currentColor" opacity=".28"/>
+          <rect x="84"  y="27" width="9" height="7"  rx="3.5" fill="currentColor" opacity=".28"/>
+          <rect x="98"  y="29" width="9" height="5"  rx="2.5" fill="currentColor" opacity=".28"/>
+        </svg>
+        <span class="care__gauge-foot" data-sv="Nästa vattning &middot; torsdag" data-en="Next water &middot; Thursday">Next water &middot; Thursday</span>
+      </div>
+    </div>
+
+    <div class="care__body">
+      <span class="care__eyebrow" data-inview data-sv="Skötsel ingår" data-en="Care, included">Care, included</span>
+      <h2 class="care__title" data-inview style="--d:.06s"
+          data-sv="Ingen föds med <br />gröna fingrar." data-en="Nobody is born <br />with a green thumb.">Nobody is born<br />with a green thumb.</h2>
+      <p class="care__lede" data-inview style="--d:.12s"
+         data-sv="Varje växt kommer med ett kort som beskriver dess behov, och en odlare som förstår dem ännu bättre. Resten handlar mest om att vara konsekvent."
+         data-en="Every plant comes with a card that describes its needs, and a grower who understands them further. The rest is mostly a matter of consistency.">
+        Every plant comes with a card that describes its needs, and a grower who
+        understands them further. The rest is mostly a matter of consistency.
+      </p>
+
+      <ol class="steps">
+        <li class="step" data-inview style="--d:.18s">
+          <span class="step__no">01</span>
+          <div class="step__copy">
+            <h3 class="step__title" data-sv="Ett skötselkort i lådan" data-en="A care card in the box">A care card in the box</h3>
+            <p class="step__text" data-sv="Ljus, vatten, och de två vanligaste misstagen med just den här växten." data-en="Light, water, and the two most common mistakes made with this exact plant.">Light, water, and the two most common mistakes made with this exact plant.</p>
+          </div>
+        </li>
+        <li class="step" data-inview style="--d:.24s">
+          <span class="step__no">02</span>
+          <div class="step__copy">
+            <h3 class="step__title" data-sv="En vänlig påminnelse" data-en="A gentle reminder">A gentle reminder</h3>
+            <p class="step__text" data-sv="Vi meddelar dig vilken vecka den behöver vatten. Svara STOPP för att avsluta." data-en="We let you know the week it needs water. Reply STOP to unsubscribe.">We let you know the week it needs water. Reply STOP to unsubscribe.</p>
+          </div>
+        </li>
+        <li class="step" data-inview style="--d:.3s">
+          <span class="step__no">03</span>
+          <div class="step__copy">
+            <h3 class="step__title" data-sv="Skicka ett foto" data-en="Send a photograph">Send a photograph</h3>
+            <p class="step__text" data-sv="Ett gult blad, en hängande stjälk, eller något annat ovanligt. En odlare svarar inom en arbetsdag." data-en="A yellow leaf, a drooping stem, or anything unusual underneath. A grower replies within a working day.">A yellow leaf, a drooping stem, or anything unusual underneath. A grower replies within a working day.</p>
+          </div>
+        </li>
+      </ol>
+
+      <a class="care__link" href="/care/" data-inview style="--d:.36s">
+        <span data-sv="Läs skötselguiden" data-en="Read the care guide">Read the care guide</span>
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── Film: the greenhouse, moving ─────────────────────────────────────── -->
+<section class="film">
+  <div class="film__head">
+    <span class="film__eyebrow" data-inview data-sv="Film" data-en="Film">Film</span>
+    <h2 class="film__title" data-inview style="--d:.06s"
+        data-sv="Arton månader, <br />på nittio sekunder" data-en="Eighteen months, <br />in ninety seconds">Eighteen months,<br />in ninety seconds</h2>
+    <p class="film__lede" data-inview style="--d:.12s"
+       data-sv="En stickling läggs i vatten i mars. Det som kommer ut i andra änden är en växt med en stjälk tjock nog att hålla upp sina egna blad. Det mesta som händer däremellan är väntan, så vi snabbade upp det."
+       data-en="A cutting goes into water in March. What comes out the other end is a plant with a stem thick enough to hold its own leaves up. Most of what happens in between is waiting, so we sped it up.">
+      A cutting goes into water in March. What comes out the other end is a plant with a
+      stem thick enough to hold its own leaves up. Most of what happens in between is
+      waiting, so we sped it up.
+    </p>
+  </div>
+
+  <!-- A tall stage with a sticky shell, same mechanism as the hero: the extra
+       height gives scroll room for the card to grow into the full screen and
+       hold there, before the next section is allowed to take over. -->
+  <div class="film__stage" id="filmStage">
+    <div class="film__sticky">
+      <figure class="film__frame" id="filmFrame">
+        <video class="film__video" id="filmVideo"
+               poster="/assets/film-poster.jpg"
+               muted loop playsinline preload="none"
+               data-src="/assets/film.mp4"
+               aria-label="A monstera growing from a rooted cutting, through potting and growth, into a finished plant in a bright room, ending on the Leafora logo"></video>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ── Journal: three things worth reading before the footer ────────────── -->
+<section class="reads">
+  <div class="reads__inner">
+    <div class="reads__head">
+      <span class="reads__eyebrow" data-inview data-sv="Från vår journal" data-en="From our journal">From our journal</span>
+      <h2 class="reads__title" data-inview style="--d:.06s" data-sv="Anteckningar från växthuset" data-en="Notes from the greenhouse">Notes from the greenhouse</h2>
+      <a class="reads__all" href="/journal/" data-inview style="--d:.12s"><span data-sv="Alla artiklar" data-en="All articles">All articles</span>
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <div class="posts posts--dark">
+      <article class="post" data-inview style="--d:.06s">
+        <a class="post__link" href="/journal/what-a-plant-does-to-a-room/">
+          <img class="post__img" src="/assets/card-monstera-alt.jpg" width="673" height="900" loading="lazy" decoding="async" alt="A monstera on a low console in a bright living room" />
+          <div class="post__meta">
+            <span class="post__kicker" data-sv="Belägg &middot; 6 min läsning" data-en="Evidence &middot; 6 min read">Evidence &middot; 6 min read</span>
+            <h3 class="post__title" data-sv="Vad en växt faktiskt gör för ett rum" data-en="What a plant actually does to a room">What a plant actually does to a room</h3>
+            <p class="post__stand" data-sv="Påståendet om luftrening stämmer mestadels inte, och den verkliga effekten är mer intressant än den på etiketten." data-en="The air-purifying claim is mostly wrong, and the real effect is more interesting than the one on the label.">The air-purifying claim is mostly wrong, and the real effect is more interesting than the one on the label.</p>
+          </div>
+        </a>
+      </article>
+      <article class="post" data-inview style="--d:.14s">
+        <a class="post__link" href="/journal/a-year-under-glass/">
+          <img class="post__img" src="/assets/card-glass-trio.jpg" width="673" height="900" loading="lazy" decoding="async" alt="Three monstera cuttings rooting in glass vessels" />
+          <div class="post__meta">
+            <span class="post__kicker" data-sv="Växthuset &middot; 5 min läsning" data-en="The greenhouse &middot; 5 min read">The greenhouse &middot; 5 min read</span>
+            <h3 class="post__title" data-sv="Ett och ett halvt år under glas" data-en="A year and a half under glass">A year and a half under glass</h3>
+            <p class="post__stand" data-sv="Vad som händer mellan stickling och hylla, säsong för säsong, och varför vi inte skyndar på det." data-en="What happens between the cutting and the shelf, season by season, and why we do not hurry it.">What happens between the cutting and the shelf, season by season, and why we do not hurry it.</p>
+          </div>
+        </a>
+      </article>
+      <article class="post" data-inview style="--d:.22s">
+        <a class="post__link" href="/journal/how-we-pack-a-plant/">
+          <img class="post__img" src="/assets/care.jpg" width="900" height="1200" loading="lazy" decoding="async" alt="A monstera being watered with a brass mister" />
+          <div class="post__meta">
+            <span class="post__kicker" data-sv="Leverans &middot; 4 min läsning" data-en="Delivery &middot; 4 min read">Delivery &middot; 4 min read</span>
+            <h3 class="post__title" data-sv="Hur man skickar något levande" data-en="How you post a living thing">How you post a living thing</h3>
+            <p class="post__stand" data-sv="Ett bud vet inte att det är en växt i lådan. Allt kring förpackningen utgår från det." data-en="A courier does not know the box has a plant in it. Everything about the packaging assumes that.">A courier does not know the box has a plant in it. Everything about the packaging assumes that.</p>
+          </div>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ── Community: what people are already saying ──────────────────────────── -->
+<section class="community-teaser">
+  <div class="community-teaser__inner">
+    <div class="reads__head">
+      <span class="reads__eyebrow" data-inview data-sv="Gemenskap" data-en="Community">Community</span>
+      <h2 class="reads__title" data-inview style="--d:.06s" data-sv="Andra människors växter" data-en="Other people&rsquo;s plants">Other people&rsquo;s plants</h2>
+      <a class="reads__all" href="/community/" data-inview style="--d:.12s"><span data-sv="Gå med i gemenskapen" data-en="Join the board">Join the board</span>
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+    <p class="community-teaser__lede" data-inview style="--d:.1s"
+       data-sv="En anslagstavla där vem som helst kan lägga upp ett foto, ställa en fråga, eller berätta vad som fungerade. Den finns i din webbläsare snarare än på en server, så de tre anteckningarna nedan är exempel för att visa formen, och allt du lägger till stannar på din egen enhet."
+       data-en="A board where anyone can post a photograph, ask a question, or say what worked. It lives in your browser rather than on a server, so the three notes below are examples, to show the shape of it, and anything you add stays on your own device.">
+      A board where anyone can post a photograph, ask a question, or say what worked. It
+      lives in your browser rather than on a server, so the three notes below are
+      examples, to show the shape of it, and anything you add stays on your own device.
+    </p>
+    <div class="community-teaser__grid">
+      <blockquote class="ctnote" data-inview style="--d:.14s">
+        <p data-sv="Min tappade fyra blad under sin första vecka här, och inga sedan dess. Det var flytten, inte rummet." data-en="Mine dropped four leaves in its first week here, and none since. It was the move, not the room.">Mine dropped four leaves in its first week here, and none since. It was the move, not the room.</p>
+        <cite>Priya &middot; The Window Fig</cite>
+      </blockquote>
+      <blockquote class="ctnote" data-inview style="--d:.2s">
+        <p data-sv="Flyttade mina glassticklingar under en växtlampa när kvällarna blev mörkare. Rötterna kom igång ungefär dubbelt så snabbt." data-en="Moved my glass cuttings under a grow lamp once the evenings got darker. Roots came in about twice as fast.">Moved my glass cuttings under a grow lamp once the evenings got darker. Roots came in about twice as fast.</p>
+        <cite>Tom&aacute;s &middot; Propagation</cite>
+      </blockquote>
+      <blockquote class="ctnote" data-inview style="--d:.26s">
+        <p data-sv="Skrev in om bruna spetsar och fick svar samma eftermiddag. Det var kranvattnet, inte något jag gjorde fel." data-en="Wrote in about brown tips and had an answer the same afternoon. It was the tap water, not anything I was doing wrong.">Wrote in about brown tips and had an answer the same afternoon. It was the tap water, not anything I was doing wrong.</p>
+        <cite>Elena &middot; The Monstera Pot</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ── The last word ────────────────────────────────────────────────────── -->
+<section class="last">
+  <div class="last__inner">
+    <span class="last__eyebrow" data-inview data-sv="När du är redo" data-en="When you are ready">When you are ready</span>
+    <h2 class="last__title" data-inview style="--d:.06s" data-sv="Börja med en växt" data-en="Start with one plant">Start with one plant</h2>
+    <p class="last__lede" data-inview style="--d:.12s"
+       data-sv="Det behövs ingen samling eller ett projekt. Börja med en växt, på den ljusaste platsen du har, med ett kort som förklarar vad den behöver. Resten brukar följa av sig självt."
+       data-en="There is no need for a collection or a project. Begin with one plant, in the brightest spot available, with a card that explains what it needs. The rest tends to follow.">
+      There is no need for a collection or a project. Begin with one plant, in the
+      brightest spot available, with a card that explains what it needs. The rest
+      tends to follow.
+    </p>
+
+    <div class="last__actions" data-inview style="--d:.18s">
+      <a class="btn btn--forest btn--lg" href="/plants/">
+        <span data-sv="Utforska växter" data-en="Explore Plants">Explore Plants</span>
+        <svg class="arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="btn btn--outline btn--lg" href="/contact/" data-sv="Fråga en odlare om råd" data-en="Ask a grower for advice">Ask a grower for advice</a>
+    </div>
+
+    <p class="last__marks" data-inview style="--d:.24s"
+       data-sv="Varje beställning har en trettiodagarsgaranti, packas för hand utan plast, och lämnar växthuset nästa tisdag eller torsdag."
+       data-en="Every order includes a thirty-day guarantee, is packed by hand without plastic, and leaves the greenhouse on the next Tuesday or Thursday.">
+      Every order includes a thirty-day guarantee, is packed by hand without plastic,
+      and leaves the greenhouse on the next Tuesday or Thursday.
+    </p>
+  </div>
+</section>
+
+<!-- ── Footer: the nudge, the greenhouse, the name ──────────────────────── -->
+<footer class="foot">
+  <div class="foot__inner">
+    <div class="foot__act">
+      <span class="foot__eyebrow" data-inview data-sv="Vår påminnelse" data-en="Our nudge">Our nudge</span>
+      <h2 class="foot__title" data-inview style="--d:.06s"
+          data-sv="Ett meddelande i veckan, <br />oftast bara en påminnelse om att vattna." data-en="One message a week, <br />usually just a reminder to water.">One message a week,<br />usually just a reminder to water.</h2>
+      <form class="foot__form" data-inview style="--d:.12s" novalidate>
+        <label class="sr-only" for="nudge-email">Email address</label>
+        <input class="foot__input" id="nudge-email" name="email" type="email" inputmode="email"
+               autocomplete="email" placeholder="you@example.com" required />
+        <button class="foot__submit" type="submit">
+          <span data-sv="Prenumerera på påminnelser" data-en="Subscribe for reminders">Subscribe for reminders</span>
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h9M8.5 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+      <p class="foot__note" data-inview style="--d:.18s"
+         data-sv="Påminnelser för växterna du äger. Svara STOPP för att avsluta." data-en="Reminders for the plants you own. Reply STOP to unsubscribe.">
+        Reminders for the plants you own. Reply STOP to unsubscribe.
+      </p>
+    </div>
+
+    <div class="foot__grid">
+      <nav class="foot__col" aria-label="Shop">
+        <h3 class="foot__col-title" data-sv="Handla" data-en="Shop">Shop</h3>
+        <ul>
+          <li><a href="/plants/" data-sv="Alla växter" data-en="All plants">All plants</a></li>
+          <li><a href="/plants/?light=low" data-sv="Svagt ljus" data-en="Low light">Low light</a></li>
+          <li><a href="/plants/pet-safe/" data-sv="Husdjurssäkert" data-en="Pet safe">Pet safe</a></li>
+          <li><a href="/pots-and-tools/" data-sv="Krukor &amp; verktyg" data-en="Pots &amp; tools">Pots &amp; tools</a></li>
+          <li><a href="/gift-cards/" data-sv="Presentkort" data-en="Gift cards">Gift cards</a></li>
+        </ul>
+      </nav>
+      <nav class="foot__col" aria-label="Care">
+        <h3 class="foot__col-title" data-sv="Skötsel" data-en="Care">Care</h3>
+        <ul>
+          <li><a href="/care/" data-sv="Skötselguide" data-en="Care guide">Care guide</a></li>
+          <li><a href="/care/watering-nudge/" data-sv="Vattningspåminnelse" data-en="Watering nudge">Watering nudge</a></li>
+          <li><a href="/care/repotting/" data-sv="Omplantering" data-en="Repotting">Repotting</a></li>
+          <li><a href="/care/diagnose/" data-sv="Diagnostisera en växt" data-en="Diagnose a plant">Diagnose a plant</a></li>
+          <li><a href="/contact/" data-sv="Fråga en odlare" data-en="Ask a grower">Ask a grower</a></li>
+        </ul>
+      </nav>
+      <nav class="foot__col" aria-label="Leafora">
+        <h3 class="foot__col-title">Leafora</h3>
+        <ul>
+          <li><a href="/about/" data-sv="Om oss" data-en="About us">About us</a></li>
+          <li><a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a></li>
+          <li><a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a></li>
+          <li><a href="/growers/" data-sv="Våra odlare" data-en="Our growers">Our growers</a></li>
+          <li><a href="/delivery-returns/" data-sv="Leverans &amp; returer" data-en="Delivery &amp; returns">Delivery &amp; returns</a></li>
+          <li><a href="/contact/" data-sv="Kontakt" data-en="Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="foot__col foot__col--house">
+        <h3 class="foot__col-title" data-sv="Vårt växthus" data-en="Our greenhouse">Our greenhouse</h3>
+        <p class="foot__house" data-sv="14 Fennel Row, London E8 <br />Öppet tisdag till lördag, 9 till 17" data-en="14 Fennel Row, London E8 <br />Open Tuesday to Saturday, 9 till 5">14 Fennel Row, London E8<br />Open Tuesday to Saturday, 9 till 5</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot__mark" aria-hidden="true">
+    <span class="foot__leaf">
+      <svg viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M20 29c0-6.6 3.4-10.6 9.4-11.4-.4 6.8-3.8 10.6-9.4 11.4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+        <path d="M19 24c-4.6 0-7.6-3-8-8.4 5 .6 8 3.4 8 8.4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+        <path d="M20 32v-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <span class="foot__word">Leafora</span>
+  </div>
+
+  <div class="foot__legal">
+    <span>&copy; 2026 Leafora &middot; <span data-sv="odlat i Kent, packat för hand" data-en="grown in Kent, packed by hand">grown in Kent, packed by hand</span></span>
+    <span class="foot__legal-links">
+      <a href="/privacy/" data-sv="Integritet" data-en="Privacy">Privacy</a>
+      <a href="/terms/" data-sv="Villkor" data-en="Terms">Terms</a>
+      <a href="/cookies/">Cookies</a>
+    </span>
+  </div>
+</footer>
+
+<script src="/script.js" type="module"></script>
+<script src="/shop.js" type="module"></script>
+</body>
+</html>

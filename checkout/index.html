@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Checkout &middot; Leafora</title>
+<meta name="description" content="Where the plant is going, and when it leaves." />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#143A28" />
+<link rel="canonical" href="https://leafora.example/checkout/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Leafora" />
+<meta property="og:title" content="Checkout" />
+<meta property="og:description" content="Where the plant is going, and when it leaves." />
+<meta property="og:url" content="https://leafora.example/checkout/" />
+<meta property="og:image" content="https://leafora.example/assets/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="A monstera against a sage wall in soft daylight" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/cabinet-grotesk-800.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/switzer-400.woff2" crossorigin />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="stylesheet" href="/shop.css" />
+</head>
+<body class="shop">
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="/">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#CFEFA4" stroke-width="1.8"/>
+            <path d="M20 29c0-6.6 3.4-10.6 9.4-11.4-.4 6.8-3.8 10.6-9.4 11.4Z" stroke="#CFEFA4" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M19 24c-4.6 0-7.6-3-8-8.4 5 .6 8 3.4 8 8.4Z" stroke="#CFEFA4" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M20 32v-6" stroke="#CFEFA4" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__word">Leafora</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+        <a href="/care/" data-sv="Skötselguide" data-en="Care Guide">Care Guide</a>
+        <a href="/about/" data-sv="Om oss" data-en="About Us">About Us</a>
+        <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+        <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+      </nav>
+
+      <a class="nav__saved" href="/saved/"><span data-sv="Sparat" data-en="Saved">Saved</span><span class="nav__count nav__count--quiet" id="navCount" hidden>0</span></a>
+
+      <a class="btn btn--cream nav__cta" href="/cart/">
+        <span data-sv="Varukorg" data-en="Basket">Basket</span>
+        <span class="nav__count" id="cartCount" hidden>0</span>
+      </a>
+
+      <div class="lang lang--nav" role="group" aria-label="Language">
+        <button type="button" class="lang__btn" data-lang="sv" aria-pressed="true">SV</button>
+        <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+      <a href="/care/" data-sv="Skötselguide" data-en="Care Guide">Care Guide</a>
+      <a href="/about/" data-sv="Om oss" data-en="About Us">About Us</a>
+      <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+      <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+      <a href="/saved/" data-sv="Sparat" data-en="Saved">Saved</a>
+      <a href="/cart/" data-sv="Varukorg" data-en="Basket">Basket</a>
+      <a href="/search/" data-sv="Sök" data-en="Search">Search</a>
+      <a href="/contact/" data-sv="Fråga en odlare" data-en="Ask a grower">Ask a grower</a>
+    </div>
+  </header>
+<main class="page">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/cart/" data-sv="Varukorg" data-en="Basket">Basket</a><span aria-hidden="true">/</span><span data-sv="Kassan" data-en="Checkout">Checkout</span>
+  </nav>
+
+  <div class="shop-head shop-head--wide">
+    <span class="shop-head__eyebrow" data-sv="Kassan" data-en="Checkout">Checkout</span>
+    <h1 class="shop-head__title" data-sv="Leveransadress" data-en="Delivery address">Delivery address</h1>
+    <p class="shop-head__lede"
+       data-sv="Vi skickar tisdagar och torsdagar. Någon behöver kunna ta emot lådan, eftersom en växt som lämnas bakom en soptunna i juli inte är en växt vi kan ersätta."
+       data-en="We dispatch Tuesdays and Thursdays. Somebody needs to be able to take the box in, because a plant left behind a bin in July is not a plant we can replace.">
+      We dispatch Tuesdays and Thursdays. Somebody needs to be able to take the box in,
+      because a plant left behind a bin in July is not a plant we can replace.
+    </p>
+  </div>
+
+  <div class="contact">
+    <form class="cform" id="checkoutForm" novalidate>
+      <div class="cform__field">
+        <label class="cform__label" for="coName" data-sv="Namn" data-en="Name">Name</label>
+        <input class="cform__input" id="coName" name="name" type="text" autocomplete="name" required />
+      </div>
+      <div class="cform__field">
+        <label class="cform__label" for="coEmail" data-sv="E-post" data-en="Email">Email</label>
+        <input class="cform__input" id="coEmail" name="email" type="email" inputmode="email" autocomplete="email" required />
+      </div>
+      <div class="cform__field">
+        <label class="cform__label" for="coAddress" data-sv="Adress" data-en="Address">Address</label>
+        <textarea class="cform__input cform__area" id="coAddress" name="address" rows="3" autocomplete="street-address" required></textarea>
+      </div>
+      <div class="cform__field">
+        <label class="cform__label" for="coPost" data-sv="Postnummer" data-en="Postcode">Postcode</label>
+        <input class="cform__input" id="coPost" name="postcode" type="text" autocomplete="postal-code" required />
+      </div>
+      <div class="cform__field">
+        <label class="cform__label" for="coDay" data-sv="Avsändningsdag" data-en="Dispatch day">Dispatch day</label>
+        <select class="cform__input" id="coDay" name="day">
+          <option value="next" data-sv="Nästa tillgängliga datum" data-en="The next available date">The next available date</option>
+          <option value="tue" data-sv="Tisdag" data-en="Tuesday">Tuesday</option>
+          <option value="thu" data-sv="Torsdag" data-en="Thursday">Thursday</option>
+          <option value="hold" data-sv="Håll tills vidare" data-en="Hold until further notice">Hold until further notice</option>
+        </select>
+        <p class="cform__hint" data-sv="Om prognosen sjunker under 2&deg;C hålls beställningen oavsett, och du meddelas." data-en="If the forecast drops below 2&deg;C, the order is held regardless, and you will be notified.">If the forecast drops below 2&deg;C, the order is held regardless, and you will be notified.</p>
+      </div>
+      <button class="btn btn--forest btn--lg" type="submit"><span data-sv="Lägg beställningen" data-en="Place the order">Place the order</span> <svg class="arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <p class="cform__small" data-sv="Inget betalningssteg finns än. Det här skriver beställningen till din webbläsare så du kan se vad som händer sedan." data-en="No payment step exists yet. This writes the order to your browser so you can see what happens next.">No payment step exists yet. This writes the order to your browser so you can see what happens next.</p>
+    </form>
+
+    <div class="cside">
+      <div class="cside__block cside__block--tint">
+        <h2 class="cside__title" data-sv="Din beställning" data-en="Your order">Your order</h2>
+        <ul class="lines lines--slim" id="checkoutLines"></ul>
+        <div class="totals__row totals__row--sum"><span data-sv="Totalt" data-en="Total">Total</span><span id="checkoutTotal">&pound;0</span></div>
+      </div>
+      <div class="cside__block">
+        <h2 class="cside__title" data-sv="Vår garanti" data-en="Our guarantee">Our guarantee</h2>
+        <p data-sv="Om en växt dör inom trettio dagar, skicka ett foto så ersätter vi den. Ingen returfrakt, inget krångel." data-en="If a plant dies within thirty days, send a photograph and we replace it. No return postage, no argument.">If a plant dies within thirty days, send a photograph and we replace it. No return postage, no argument.</p>
+        <a class="care__link care__link--dark" href="/delivery-returns/"><span data-sv="Leverans och returer" data-en="Delivery and returns">Delivery and returns</span>
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+
+  <footer class="foot foot--slim">
+    <div class="foot__legal">
+      <span>&copy; 2026 Leafora &middot; <span data-sv="odlat i Kent, packat för hand" data-en="grown in Kent, packed by hand">grown in Kent, packed by hand</span></span>
+      <span class="foot__legal-links">
+        <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+        <a href="/care/" data-sv="Skötselguide" data-en="Care guide">Care guide</a>
+        <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+        <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+        <a href="/contact/" data-sv="Kontakt" data-en="Contact">Contact</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/accessibility/" data-sv="Tillgänglighet" data-en="Accessibility">Accessibility</a>
+        <a href="/sitemap/" data-sv="Sidkarta" data-en="Sitemap">Sitemap</a>
+        <a href="/privacy/" data-sv="Integritet" data-en="Privacy">Privacy</a>
+        <a href="/terms/" data-sv="Villkor" data-en="Terms">Terms</a>
+        <a href="/cookies/">Cookies</a>
+        <a href="/search/" data-sv="Sök" data-en="Search">Search</a>
+        <a href="/account/" data-sv="Konto" data-en="Account">Account</a>
+      </span>
+    </div>
+  </footer>
+<script src="/shop.js" type="module"></script>
+</body>
+</html>

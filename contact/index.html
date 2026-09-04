@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact &middot; Leafora</title>
+<meta name="description" content="Ask a grower anything about a plant, an order, or a room. We answer within a working day." />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#143A28" />
+<link rel="canonical" href="https://leafora.example/contact/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Leafora" />
+<meta property="og:title" content="Contact" />
+<meta property="og:description" content="Ask a grower anything about a plant, an order, or a room. We answer within a working day." />
+<meta property="og:url" content="https://leafora.example/contact/" />
+<meta property="og:image" content="https://leafora.example/assets/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="A monstera against a sage wall in soft daylight" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/cabinet-grotesk-800.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/switzer-400.woff2" crossorigin />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="stylesheet" href="/shop.css" />
+</head>
+<body class="shop">
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="/">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#CFEFA4" stroke-width="1.8"/>
+            <path d="M20 29c0-6.6 3.4-10.6 9.4-11.4-.4 6.8-3.8 10.6-9.4 11.4Z" stroke="#CFEFA4" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M19 24c-4.6 0-7.6-3-8-8.4 5 .6 8 3.4 8 8.4Z" stroke="#CFEFA4" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M20 32v-6" stroke="#CFEFA4" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__word">Leafora</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+        <a href="/care/" data-sv="Skötselguide" data-en="Care Guide">Care Guide</a>
+        <a href="/about/" data-sv="Om oss" data-en="About Us">About Us</a>
+        <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+        <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+      </nav>
+
+      <a class="nav__saved" href="/saved/"><span data-sv="Sparat" data-en="Saved">Saved</span><span class="nav__count nav__count--quiet" id="navCount" hidden>0</span></a>
+
+      <a class="btn btn--cream nav__cta" href="/cart/">
+        <span data-sv="Varukorg" data-en="Basket">Basket</span>
+        <span class="nav__count" id="cartCount" hidden>0</span>
+      </a>
+
+      <div class="lang lang--nav" role="group" aria-label="Language">
+        <button type="button" class="lang__btn" data-lang="sv" aria-pressed="true">SV</button>
+        <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+      <a href="/care/" data-sv="Skötselguide" data-en="Care Guide">Care Guide</a>
+      <a href="/about/" data-sv="Om oss" data-en="About Us">About Us</a>
+      <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+      <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+      <a href="/contact/" data-sv="Fråga en odlare" data-en="Ask a grower">Ask a grower</a>
+    </div>
+  </header>
+<main class="page">
+  <div class="shop-head shop-head--wide">
+    <span class="shop-head__eyebrow" data-sv="Kontakt" data-en="Contact">Contact</span>
+    <h1 class="shop-head__title" data-sv="Fråga en odlare" data-en="Ask a grower">Ask a grower</h1>
+    <p class="shop-head__lede"
+       data-sv="Någon som faktiskt har odlat växten läser varje meddelande, och svarar inom en arbetsdag. Det finns ingen dum fråga och ingen kostnad, oavsett om du köpte växten här eller ärvde den från en rumskamrat."
+       data-en="Someone who has actually grown the plant reads every message, and answers within a working day. There is no wrong question and no charge, whether you bought the plant here or inherited it from a flatmate.">
+      Someone who has actually grown the plant reads every message, and answers within a
+      working day. There is no wrong question and no charge, whether you bought the plant
+      here or inherited it from a flatmate.
+    </p>
+  </div>
+
+  <div class="contact">
+    <form class="cform" id="contactForm" novalidate>
+      <div class="cform__field">
+        <label class="cform__label" for="cName" data-sv="Ditt namn" data-en="Your name">Your name</label>
+        <input class="cform__input" id="cName" name="name" type="text" autocomplete="name" required />
+      </div>
+      <div class="cform__field">
+        <label class="cform__label" for="cEmail" data-sv="E-post" data-en="Email">Email</label>
+        <input class="cform__input" id="cEmail" name="email" type="email" inputmode="email" autocomplete="email" required />
+      </div>
+      <div class="cform__field">
+        <label class="cform__label" for="cTopic" data-sv="Vad gäller det?" data-en="What is it about?">What is it about?</label>
+        <select class="cform__input" id="cTopic" name="topic">
+          <option value="sick" data-sv="En växt som har det svårt" data-en="A plant that is struggling">A plant that is struggling</option>
+          <option value="before" data-sv="Välja en växt för ett rum" data-en="Choosing a plant for a room">Choosing a plant for a room</option>
+          <option value="order" data-sv="En beställning eller leverans" data-en="An order or a delivery">An order or a delivery</option>
+          <option value="visit" data-sv="Besöka Hackney-rummet" data-en="Visiting the Hackney room">Visiting the Hackney room</option>
+          <option value="other" data-sv="Något annat" data-en="Something else">Something else</option>
+        </select>
+      </div>
+      <div class="cform__field">
+        <label class="cform__label" for="cMessage" data-sv="Meddelande" data-en="Message">Message</label>
+        <textarea class="cform__input cform__area" id="cMessage" name="message" rows="6" required></textarea>
+        <p class="cform__hint" id="cHint" data-sv="Om en växt mår dåligt, berätta vad som ändrats nyligen: en flytt, en omplantering, att värmen sattes på." data-en="If a plant is unwell, say what changed recently: a move, a repot, the heating going on.">If a plant is unwell, say what changed recently: a move, a repot, the heating going on.</p>
+      </div>
+      <button class="btn btn--forest btn--lg" type="submit"><span data-sv="Skicka meddelande" data-en="Send message">Send message</span> <svg class="arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M11.5 4.5H5.6M11.5 4.5v5.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <p class="cform__small" data-sv="Vi svarar från en riktig adress, inte en utan svarsmöjlighet." data-en="We reply from a real address, not a no-reply one.">We reply from a real address, not a no-reply one.</p>
+    </form>
+
+    <div class="cside">
+      <div class="cside__block">
+        <h2 class="cside__title" data-sv="Skicka ett foto" data-en="Send a photograph">Send a photograph</h2>
+        <p data-sv="Nio gånger av tio löser en bild det snabbare än ett stycke text. Tre bilder berättar nästan allt:" data-en="Nine times out of ten a picture settles it faster than a paragraph. Three shots tell us almost everything:">Nine times out of ten a picture settles it faster than a paragraph. Three shots tell us almost everything:</p>
+        <p class="cside__three" data-sv="<strong>Hela växten</strong>, med krukan, så vi kan se proportionerna. <strong>Problemet i närbild</strong>, inklusive undersidan av bladet om det finns något där. Och <strong>rummet</strong>, taget från där växten står, vänt mot fönstret."
+           data-en="<strong>The whole plant</strong>, pot included, so we can see its proportions. <strong>The problem close up</strong>, including the underside of the leaf if there is anything on it. And <strong>the room</strong>, taken from where the plant stands, facing the window.">
+          <strong>The whole plant</strong>, pot included, so we can see its proportions.
+          <strong>The problem close up</strong>, including the underside of the leaf if there is
+          anything on it. And <strong>the room</strong>, taken from where the plant stands,
+          facing the window.
+        </p>
+        <p class="cside__aside" data-sv="Bifoga dem i ditt svar när vi har svarat, eller ta med dem när du besöker oss." data-en="Attach them to your reply once we answer, or bring them when you visit.">Attach them to your reply once we answer, or bring them when you visit.</p>
+      </div>
+
+      <div class="cside__block cside__block--tint">
+        <h2 class="cside__title" data-sv="Vårt växthus" data-en="Our greenhouse">Our greenhouse</h2>
+        <p class="cside__lines" data-sv="14 Fennel Row <br />London E8 <br />Öppet tisdag till lördag, 9 till 17" data-en="14 Fennel Row <br />London E8 <br />Open Tuesday to Saturday, 9 till 5">
+          14 Fennel Row<br />
+          London E8<br />
+          Open Tuesday to Saturday, 9 till 5
+        </p>
+        <p class="cside__live"><span class="foot__dot" aria-hidden="true"></span><span data-sv="Nästa avsändning torsdag" data-en="Next dispatch Thursday">Next dispatch Thursday</span></p>
+      </div>
+
+      <div class="cside__block">
+        <h2 class="cside__title" data-sv="Ett snabbare alternativ" data-en="A quicker option">A quicker option</h2>
+        <p data-sv="De flesta frågor vi får hör till en av sex vanliga problem, alla beskrivna i skötselguiden med vad du bör kontrollera först." data-en="Most questions we receive fall into one of six common issues, each covered in the care guide with what to check first.">Most questions we receive fall into one of six common issues, each covered in the care guide with what to check first.</p>
+        <a class="care__link care__link--dark" href="/care/diagnose/"><span data-sv="Använd diagnosverktyget" data-en="Use the diagnosis tool">Use the diagnosis tool</span>
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="cside__block">
+        <h2 class="cside__title" data-sv="Köper du åt ett kontor eller en butik?" data-en="Buying for an office or a shop?">Buying for an office or a shop?</h2>
+        <p data-sv="Grossistförfrågningar hanteras separat, eftersom de behöver antal och en tidsram snarare än ett formulär." data-en="Wholesale enquiries are handled separately, since they need a quantity and a timeframe rather than a form.">Wholesale enquiries are handled separately, since they need a quantity and a timeframe rather than a form.</p>
+        <a class="care__link care__link--dark" href="/wholesale/"><span data-sv="Se grossist" data-en="See wholesale">See wholesale</span>
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+
+  <footer class="foot foot--slim">
+    <div class="foot__legal">
+      <span>&copy; 2026 Leafora &middot; <span data-sv="odlat i Kent, packat för hand" data-en="grown in Kent, packed by hand">grown in Kent, packed by hand</span></span>
+      <span class="foot__legal-links">
+        <a href="/" data-sv="Hem" data-en="Home">Home</a>
+        <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+        <a href="/care/" data-sv="Skötselguide" data-en="Care guide">Care guide</a>
+        <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+        <a href="/contact/" data-sv="Kontakt" data-en="Contact">Contact</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/sitemap/" data-sv="Sidkarta" data-en="Sitemap">Sitemap</a>
+      </span>
+    </div>
+  </footer>
+
+<script src="/shop.js" type="module"></script>
+</body>
+</html>

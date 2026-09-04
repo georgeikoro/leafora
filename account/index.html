@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Account &middot; Leafora</title>
+<meta name="description" content="Your orders, your plants, and your reminder settings." />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#143A28" />
+<link rel="canonical" href="https://leafora.example/account/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Leafora" />
+<meta property="og:title" content="Account" />
+<meta property="og:description" content="Your orders, your plants, and your reminder settings." />
+<meta property="og:url" content="https://leafora.example/account/" />
+<meta property="og:image" content="https://leafora.example/assets/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="A monstera against a sage wall in soft daylight" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/cabinet-grotesk-800.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="/fonts/switzer-400.woff2" crossorigin />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="stylesheet" href="/shop.css" />
+</head>
+<body class="shop">
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="/">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#CFEFA4" stroke-width="1.8"/>
+            <path d="M20 29c0-6.6 3.4-10.6 9.4-11.4-.4 6.8-3.8 10.6-9.4 11.4Z" stroke="#CFEFA4" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M19 24c-4.6 0-7.6-3-8-8.4 5 .6 8 3.4 8 8.4Z" stroke="#CFEFA4" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M20 32v-6" stroke="#CFEFA4" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__word">Leafora</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+        <a href="/care/" data-sv="Skötselguide" data-en="Care Guide">Care Guide</a>
+        <a href="/about/" data-sv="Om oss" data-en="About Us">About Us</a>
+        <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+        <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+      </nav>
+
+      <a class="nav__saved" href="/saved/"><span data-sv="Sparat" data-en="Saved">Saved</span><span class="nav__count nav__count--quiet" id="navCount" hidden>0</span></a>
+
+      <a class="btn btn--cream nav__cta" href="/cart/">
+        <span data-sv="Varukorg" data-en="Basket">Basket</span>
+        <span class="nav__count" id="cartCount" hidden>0</span>
+      </a>
+
+      <div class="lang lang--nav" role="group" aria-label="Language">
+        <button type="button" class="lang__btn" data-lang="sv" aria-pressed="true">SV</button>
+        <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+      <a href="/care/" data-sv="Skötselguide" data-en="Care Guide">Care Guide</a>
+      <a href="/about/" data-sv="Om oss" data-en="About Us">About Us</a>
+      <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+      <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+      <a href="/saved/" data-sv="Sparat" data-en="Saved">Saved</a>
+      <a href="/cart/" data-sv="Varukorg" data-en="Basket">Basket</a>
+      <a href="/search/" data-sv="Sök" data-en="Search">Search</a>
+      <a href="/contact/" data-sv="Fråga en odlare" data-en="Ask a grower">Ask a grower</a>
+    </div>
+  </header>
+<main class="page">
+  <div class="shop-head shop-head--wide">
+    <span class="shop-head__eyebrow" data-sv="Konto" data-en="Account">Account</span>
+    <h1 class="shop-head__title" data-sv="Dina beställningar, dina växter" data-en="Your orders, your plants">Your orders, your plants</h1>
+    <p class="shop-head__lede"
+       data-sv="Det finns ingen inloggning än, så allt nedan är vad den här webbläsaren vet. Ett riktigt konto skulle föra med det mellan enheter."
+       data-en="There is no sign-in yet, so everything below is what this browser knows. A real account would carry it between devices.">
+      There is no sign-in yet, so everything below is what this browser knows. A real
+      account would carry it between devices.
+    </p>
+  </div>
+
+  <section class="acct">
+    <h2 class="sect__title" data-sv="Beställningar" data-en="Orders">Orders</h2>
+    <ul class="lines" id="acctOrders"></ul>
+    <p class="empty" id="acctNoOrders" hidden data-sv="Inget beställt i den här webbläsaren än." data-en="Nothing ordered in this browser yet.">Nothing ordered in this browser yet.</p>
+  </section>
+
+  <section class="acct">
+    <h2 class="sect__title" data-sv="Mina växter" data-en="My plants">My plants</h2>
+    <p class="acct__lede" data-sv="Allt du har sparat. När en beställning finns visas det du köpt här också, med skötselkortet för var och en." data-en="Everything you have saved. Once an order exists, what you bought appears here too, with the care card for each one.">Everything you have saved. Once an order exists, what you bought appears here too, with the care card for each one.</p>
+    <ul class="shop-grid" id="acctPlants"></ul>
+    <p class="empty" id="acctNoPlants" hidden data-sv="Inget sparat än. Hjärtat på en växt lägger till den här." data-en="Nothing saved yet. The heart on any plant adds it here.">Nothing saved yet. The heart on any plant adds it here.</p>
+  </section>
+
+  <section class="acct">
+    <h2 class="sect__title" data-sv="Påminnelseinställningar" data-en="Reminder settings">Reminder settings</h2>
+    <p class="acct__lede" data-sv="Vattningspåminnelsen: ett meddelande i veckan, oftast bara en påminnelse om att vattna." data-en="The watering nudge: one message a week, usually just a reminder to water.">The watering nudge: one message a week, usually just a reminder to water.</p>
+    <div class="prefs" id="prefs">
+      <label class="pref"><input type="checkbox" id="prefWater" checked /><span class="pref__box" aria-hidden="true"></span><span data-sv="<strong>Vattningspåminnelser</strong>Veckan varje växt du äger behöver vatten." data-en="<strong>Watering reminders</strong>The week each plant you own needs water."><strong>Watering reminders</strong>The week each plant you own needs water.</span></label>
+      <label class="pref"><input type="checkbox" id="prefSeason" checked /><span class="pref__box" aria-hidden="true"></span><span data-sv="<strong>Säsongsanteckningar</strong>Fyra gånger om året: när du ska börja gödsla, när du ska sluta, när du ska plantera om." data-en="<strong>Seasonal notes</strong>Four a year: when to start feeding, when to stop, when to repot."><strong>Seasonal notes</strong>Four a year: when to start feeding, when to stop, when to repot.</span></label>
+      <label class="pref"><input type="checkbox" id="prefNews" /><span class="pref__box" aria-hidden="true"></span><span data-sv="<strong>Nya växter</strong>Bara när något genuint nytt kommer ut ur växthuset." data-en="<strong>New plants</strong>Only when something genuinely new comes out of the greenhouse."><strong>New plants</strong>Only when something genuinely new comes out of the greenhouse.</span></label>
+    </div>
+    <div class="prefs__actions">
+      <button class="btn btn--outline" type="button" id="unsubAll" data-sv="Stäng av allt" data-en="Turn everything off">Turn everything off</button>
+      <span class="prefs__saved" id="prefsSaved" hidden data-sv="Sparat i den här webbläsaren" data-en="Saved in this browser">Saved in this browser</span>
+    </div>
+    <p class="acct__small" data-sv="Det här är samma sak som att svara STOPP på ett meddelande. Att stänga av allt påverkar aldrig en beställning." data-en="This is the same switch as replying STOP to a message. Turning everything off never affects an order.">This is the same switch as replying STOP to a message. Turning everything off never affects an order.</p>
+  </section>
+</main>
+
+  <footer class="foot foot--slim">
+    <div class="foot__legal">
+      <span>&copy; 2026 Leafora &middot; <span data-sv="odlat i Kent, packat för hand" data-en="grown in Kent, packed by hand">grown in Kent, packed by hand</span></span>
+      <span class="foot__legal-links">
+        <a href="/plants/" data-sv="Växter" data-en="Plants">Plants</a>
+        <a href="/care/" data-sv="Skötselguide" data-en="Care guide">Care guide</a>
+        <a href="/journal/" data-sv="Journal" data-en="Journal">Journal</a>
+        <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
+        <a href="/contact/" data-sv="Kontakt" data-en="Contact">Contact</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/accessibility/" data-sv="Tillgänglighet" data-en="Accessibility">Accessibility</a>
+        <a href="/sitemap/" data-sv="Sidkarta" data-en="Sitemap">Sitemap</a>
+        <a href="/privacy/" data-sv="Integritet" data-en="Privacy">Privacy</a>
+        <a href="/terms/" data-sv="Villkor" data-en="Terms">Terms</a>
+        <a href="/cookies/">Cookies</a>
+        <a href="/search/" data-sv="Sök" data-en="Search">Search</a>
+        <a href="/account/" data-sv="Konto" data-en="Account">Account</a>
+      </span>
+    </div>
+  </footer>
+<script src="/shop.js" type="module"></script>
+</body>
+</html>
