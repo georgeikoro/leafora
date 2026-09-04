@@ -1,14 +1,3 @@
-// Mobile nav
-const toggle = document.querySelector('.nav__toggle');
-const drawer = document.getElementById('mobileNav');
-
-toggle?.addEventListener('click', () => {
-  const open = toggle.getAttribute('aria-expanded') === 'true';
-  toggle.setAttribute('aria-expanded', String(!open));
-  toggle.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
-  drawer.hidden = open;
-});
-
 // Pointer parallax on the plant: desktop, motion-safe only
 const fine = matchMedia('(pointer:fine)');
 const calm = matchMedia('(prefers-reduced-motion:reduce)');

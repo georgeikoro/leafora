@@ -200,9 +200,12 @@ img{ max-width:100%; }
 .lang__btn:hover{ color:var(--text); }
 .lang__btn[aria-pressed="true"]{ background:var(--lime); color:#143A28; }
 
-/* the same pill, sized down for the crowded nav row, and kept visible even
-   once the nav links collapse into the hamburger drawer below 1041px       */
+/* the same pill, sized down for the crowded nav row                        */
 .lang--nav .lang__btn{ padding:5px 11px; font-size:11px; }
+
+/* below 1041px the nav row hands off to the hamburger drawer, so the switch
+   moves in there too instead of crowding the row next to the toggle        */
+.lang--drawer{ display:none; }
 
 .title{
   font-family:var(--display);
@@ -1032,6 +1035,7 @@ img{ max-width:100%; }
   .shell{ position:static; height:auto; min-height:100dvh; }
   .nav__links, .nav__cta{ display:none; }
   .nav__toggle{ display:flex; margin-left:auto; }
+  .lang--nav{ display:none; }
 
   .mobile-nav{ gap:0; padding:8px 0 6px; }
   .mobile-nav a{
@@ -1041,6 +1045,8 @@ img{ max-width:100%; }
   }
   .mobile-nav a:last-of-type{ border-bottom:0; }
   .mobile-nav .btn{ align-self:stretch; justify-content:center; margin-top:12px; }
+  .lang--drawer{ display:inline-flex; align-self:flex-start; margin-bottom:2px; }
+  .lang--drawer .lang__btn{ padding:6px 15px; font-size:12px; }
 
   .hero{
     grid-template-columns:minmax(0,1fr) minmax(0,.92fr);
@@ -1112,7 +1118,7 @@ img{ max-width:100%; }
 
   .foot{ padding-inline:20px; }
   .foot__form{ flex-direction:column; align-items:stretch; }
-  .foot__input{ font-size:16px; }         /* 16px or iOS zooms the page on focus */
+  .foot__input{ flex:0 0 auto; font-size:16px; }         /* flex-basis is a height in a column flow, and 16px stops iOS zooming the page on focus */
   .foot__submit{ justify-content:center; }
   .foot__grid{ grid-template-columns:1fr 1fr; gap:26px 18px; }
   .foot__col a, .foot__house{ font-size:14px; }
