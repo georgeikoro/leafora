@@ -164,6 +164,8 @@ img{ max-width:100%; }
   display:flex; flex-direction:column; gap:13px;
   padding:16px 2px 4px;
   font-size:18px; font-weight:500;
+  max-height:calc(100dvh - 74px);   /* clears the header row on the shortest phones */
+  overflow-y:auto;
 }
 /* only the homepage's drawer sits directly in .shell, alongside the hero's
    absolutely-positioned visual/orbits, which is what it needs to cover; the
