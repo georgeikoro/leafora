@@ -8,5 +8,9 @@
     "dev": "vite --host --port 5190 --open",
     "build": "vite build",
     "preview": "vite preview --host --port 4190"
+  },
+  "devDependencies": {
+    "pngjs": "^7.0.0",
+    "vite": "^5.4.21"
   }
 }
