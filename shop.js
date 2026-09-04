@@ -10,11 +10,18 @@ const escapeHtml = (s) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&l
 {
   const toggle = document.querySelector('.nav__toggle');
   const drawer = document.getElementById('mobileNav');
+  const header = document.querySelector('.nav, .topbar');
+  const setHeaderHeight = () => {
+    if (header) document.documentElement.style.setProperty('--nav-h', header.offsetHeight + 'px');
+  };
+  setHeaderHeight();
+  addEventListener('resize', setHeaderHeight);
   toggle?.addEventListener('click', () => {
     const open = toggle.getAttribute('aria-expanded') === 'true';
     toggle.setAttribute('aria-expanded', String(!open));
     toggle.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
     drawer.hidden = open;
+    document.body.classList.toggle('nav-open', !open);
   });
 }
 

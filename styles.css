@@ -159,6 +159,9 @@ img{ max-width:100%; }
 .nav__toggle[aria-expanded="true"] span:nth-child(2){ opacity:0; }
 .nav__toggle[aria-expanded="true"] span:nth-child(3){ transform:translateY(-9px) rotate(-45deg); }
 
+body.nav-open{ overflow:hidden; }   /* the drawer is a fixed overlay on the homepage, and the
+                                        header isn't sticky there, so background scroll would
+                                        otherwise slide it out from under the open drawer */
 .mobile-nav[hidden]{ display:none; }
 .mobile-nav{
   display:flex; flex-direction:column; gap:13px;
@@ -167,13 +170,19 @@ img{ max-width:100%; }
   max-height:calc(100dvh - 74px);   /* clears the header row on the shortest phones */
   overflow-y:auto;
 }
-/* only the homepage's drawer sits directly in .shell, alongside the hero's
-   absolutely-positioned visual/orbits, which is what it needs to cover; the
-   .topbar variant already has its own solid background and z-index        */
+/* the homepage's drawer sits directly in .shell, alongside the hero's
+   absolutely-positioned visual/orbits, which are sized to .shell's own
+   height: letting the drawer sit in normal flow there would grow .shell
+   while open and drag those elements out of place. A fixed overlay below
+   the header keeps it out of flow entirely, so opening it never touches
+   the layout of anything behind it. The .topbar variant has no such
+   decoration to protect, so it can stay in normal flow.                  */
 .shell > .mobile-nav{
-  position:relative; z-index:20;
+  position:fixed;
+  top:var(--nav-h, 70px); left:0; right:0; bottom:0;
+  z-index:20;
   background:var(--ink);
-  margin-inline:calc(var(--pad-x) * -1);
+  max-height:none;
   padding-inline:var(--pad-x);
 }
 .mobile-nav .btn{ align-self:flex-start; margin-top:4px; }
