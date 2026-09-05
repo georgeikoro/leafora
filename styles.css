@@ -596,13 +596,17 @@ body.nav-open{ overflow:hidden; }   /* the drawer is a fixed overlay on the home
 .plant:hover .plant__img--alt,
 .plant:has(:focus-visible) .plant__img--alt{ opacity:1; }
 
-.plant::after{                              /* scrim, so the title always reads */
+.plant::after{                              /* dark-at-bottom overlay so the title always reads;
+                                                eases away on hover once the title itself is gone */
   content:"";
   position:absolute; inset:auto 0 0 0;
   height:52%;
   background:linear-gradient(to top, rgba(10,26,16,.74) 0%, rgba(10,26,16,.46) 22%, rgba(10,26,16,.20) 48%, rgba(10,26,16,.06) 72%, transparent 100%);
+  transition:opacity .35s ease;
   pointer-events:none;
 }
+.plant:hover::after,
+.plant:has(:focus-visible)::after{ opacity:0; }
 .plant__chip{
   position:absolute; top:14px; left:14px; z-index:2;
   padding:6px 12px;
@@ -628,7 +632,6 @@ body.nav-open{ overflow:hidden; }   /* the drawer is a fixed overlay on the home
   position:absolute; left:clamp(16px,1.5vw,24px); bottom:clamp(16px,1.5vw,24px); z-index:2;
   color:#fff;
   text-align:left;
-  text-shadow:0 1px 2px rgba(0,0,0,.35), 0 4px 16px rgba(0,0,0,.3);
   transition:opacity .35s ease, transform .45s cubic-bezier(.16,.84,.32,1);
 }
 .plant:hover .plant__meta,
