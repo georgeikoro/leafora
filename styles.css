@@ -1054,7 +1054,8 @@ body.nav-open{ overflow:hidden; }   /* the drawer is a fixed overlay on the home
 @media (max-width:1040px){
   .stage{ height:auto; overflow-x:clip; }    /* the ring and the photo layer are wider than a phone */
   .shell{ position:static; height:auto; min-height:100dvh; }
-  .nav__links, .nav__cta{ display:none; }
+  .nav .nav__links, .nav .nav__cta{ display:none; }   /* scoped to the homepage's own header:
+    .nav__cta is reused on shop pages for the basket button, which should stay visible */
   .nav__toggle{ display:flex; margin-left:auto; }
   .lang--nav{ display:none; }
 
