@@ -987,17 +987,17 @@ body.shop{
    move into the hamburger drawer as icon buttons instead (.drawer-utils)    */
 .nav__glyph{ display:none; width:20px; height:20px; flex:none; }
 
-.drawer-utils{ display:flex; gap:14px; align-self:flex-end; margin-top:18px; }
+.drawer-utils{ display:flex; gap:10px; }
 .drawer-utils__link{
   position:relative;
   display:grid; place-items:center;
-  width:44px; height:44px;
+  width:34px; height:34px;
   border-radius:50%;
   background:rgba(237,243,230,.1);
   color:var(--text);
 }
 .drawer-utils__link--cart{ background:var(--lime); color:#143A28; }
-.drawer-utils__link .nav__glyph{ display:block; }
+.drawer-utils__link .nav__glyph{ display:block; width:17px; height:17px; }
 .drawer-utils__link .nav__count{
   position:absolute; top:-4px; right:-4px;
   min-width:17px; height:17px; padding:0 4px;

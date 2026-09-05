@@ -1070,8 +1070,13 @@ body.nav-open{ overflow:hidden; }   /* the drawer is a fixed overlay on the home
   }
   .mobile-nav a:last-of-type{ border-bottom:0; }
   .mobile-nav .btn{ align-self:stretch; justify-content:center; margin-top:12px; }
-  .lang--drawer{ display:inline-flex; align-self:flex-start; margin-top:14px; }
+  .drawer-foot{ display:flex; align-items:center; justify-content:space-between; margin-top:14px; }
+  .lang--drawer{ display:inline-flex; }
   .lang--drawer .lang__btn{ padding:6px 15px; font-size:12px; }
+  /* the homepage's drawer has no saved/basket icons to share a row with, so
+     .lang--drawer sits there on its own, unwrapped, and still needs its own
+     spacing and alignment */
+  .mobile-nav > .lang--drawer{ align-self:flex-start; margin-top:14px; }
 
   .hero{
     grid-template-columns:minmax(0,1fr) minmax(0,.92fr);
