@@ -49,11 +49,11 @@
         <a href="/community/" data-sv="Gemenskap" data-en="Community">Community</a>
       </nav>
 
-      <a class="nav__saved" href="/saved/"><svg class="nav__glyph" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20.4s-7.6-4.6-7.6-9.6A4.4 4.4 0 0 1 12 8.4a4.4 4.4 0 0 1 7.6 2.4c0 5-7.6 9.6-7.6 9.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span class="nav__label" data-sv="Sparat" data-en="Saved">Saved</span><span class="nav__count nav__count--quiet" id="navCount" hidden>0</span></a>
+      <a class="nav__saved" href="/saved/"><svg class="nav__glyph" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20.4s-7.6-4.6-7.6-9.6A4.4 4.4 0 0 1 12 8.4a4.4 4.4 0 0 1 7.6 2.4c0 5-7.6 9.6-7.6 9.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span class="nav__label" data-sv="Sparat" data-en="Saved">Saved</span><span class="nav__count nav__count--quiet js-saved-count" id="navCount" hidden>0</span></a>
 
       <a class="btn btn--cream nav__cta" href="/cart/"><svg class="nav__glyph" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 8h11l-1 12h-9l-1-12Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
         <span class="nav__label" data-sv="Varukorg" data-en="Basket">Basket</span>
-        <span class="nav__count" id="cartCount" hidden>0</span>
+        <span class="nav__count js-cart-count" id="cartCount" hidden>0</span>
       </a>
 
       <div class="lang lang--nav" role="group" aria-label="Language">
@@ -75,6 +75,16 @@
       <div class="lang lang--drawer" role="group" aria-label="Language">
         <button type="button" class="lang__btn" data-lang="sv" aria-pressed="true">SV</button>
         <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <div class="drawer-utils">
+        <a class="drawer-utils__link" href="/saved/" aria-label="Saved">
+          <svg class="nav__glyph" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20.4s-7.6-4.6-7.6-9.6A4.4 4.4 0 0 1 12 8.4a4.4 4.4 0 0 1 7.6 2.4c0 5-7.6 9.6-7.6 9.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <span class="nav__count nav__count--quiet js-saved-count" hidden>0</span>
+        </a>
+        <a class="drawer-utils__link drawer-utils__link--cart" href="/cart/" aria-label="Basket">
+          <svg class="nav__glyph" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 8h11l-1 12h-9l-1-12Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <span class="nav__count js-cart-count" hidden>0</span>
+        </a>
       </div>
     </div>
   </header>

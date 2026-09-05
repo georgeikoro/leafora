@@ -1103,8 +1103,9 @@ body.nav-open{ overflow:hidden; }   /* the drawer is a fixed overlay on the home
 }
 
 /* ── Phone: 640 and under ─────────────────────────────────────────────────
-   One column, still left-aligned. Centring everything is what a shrunk
-   desktop looks like. The plant becomes a band, the CTA spans the screen.   */
+   One column, centred. Left-aligned text stranded against a full-width
+   column read as hanging off the edge, so everything sits on a centre
+   axis instead — the plant becomes a band, the CTA spans the screen.       */
 @media (max-width:640px){
   :root{ --pad-x:20px; }
 
@@ -1116,13 +1117,13 @@ body.nav-open{ overflow:hidden; }   /* the drawer is a fixed overlay on the home
     gap:clamp(24px,6vw,34px);
     padding:clamp(14px,4vw,24px) 0 clamp(34px,8vw,52px);
   }
-  .copy{ align-items:flex-start; text-align:left; }
+  .copy{ align-items:center; text-align:center; }
   .title{ font-size:clamp(34px,10vw,46px); line-height:1.02; }
-  .lede{ max-width:34ch; font-size:15px; }
-  .cta-row{ align-self:stretch; }              /* .copy is a flex column: children shrink without this */
+  .lede{ max-width:34ch; font-size:15px; margin-inline:auto; }
+  .cta-row{ align-self:stretch; justify-content:center; }   /* .copy is a flex column: children shrink without this */
   .cta-row .btn{ flex:1 1 auto; justify-content:center; padding-block:15px; }
   .visual__inner{ width:min(100% - 44px, 300px); --size:88%; }   /* leaves room for the badges riding the ring */
-  .proof{ margin-top:20px; }
+  .proof{ margin-top:20px; justify-content:center; }
   .brand__word{ font-size:21px; }
   .badge{ width:42px; }
 

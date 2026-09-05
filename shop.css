@@ -983,9 +983,26 @@ body.shop{
 .nav__saved:hover{ color:var(--lime); }
 .nav__count--quiet{ background:rgba(207,239,164,.18); color:var(--lime); }
 
-/* the icon shows only once the text nav collapses into the hamburger drawer,
-   below 1041px, where there is no room left to spell "Saved" and "Basket"   */
+/* the plain nav__saved/nav__cta icon is desktop-only text; below 1041px both
+   move into the hamburger drawer as icon buttons instead (.drawer-utils)    */
 .nav__glyph{ display:none; width:20px; height:20px; flex:none; }
+
+.drawer-utils{ display:flex; gap:14px; align-self:flex-end; margin-top:18px; }
+.drawer-utils__link{
+  position:relative;
+  display:grid; place-items:center;
+  width:44px; height:44px;
+  border-radius:50%;
+  background:rgba(237,243,230,.1);
+  color:var(--text);
+}
+.drawer-utils__link--cart{ background:var(--lime); color:#143A28; }
+.drawer-utils__link .nav__glyph{ display:block; }
+.drawer-utils__link .nav__count{
+  position:absolute; top:-4px; right:-4px;
+  min-width:17px; height:17px; padding:0 4px;
+  font-size:10px;
+}
 
 .basket{
   display:grid; grid-template-columns:minmax(0,1fr) minmax(280px,.44fr);
@@ -1279,12 +1296,8 @@ body.shop{
    reading line would otherwise get too short.                              */
 @media (max-width:1040px){
   .sitemap-grid{ grid-template-columns:repeat(2, minmax(0,1fr)); }
-  .topbar .nav__links{ display:none; }
-  .topbar .nav__toggle{ display:flex; }
-  .topbar .nav__saved{ margin-left:auto; }
-  .topbar .nav__saved .nav__label, .topbar .nav__cta .nav__label{ display:none; }
-  .topbar .nav__glyph{ display:block; }
-  .topbar .nav__cta{ padding:9px; }
+  .topbar .nav__links, .topbar .nav__saved, .topbar .nav__cta{ display:none; }
+  .topbar .nav__toggle{ display:flex; margin-left:auto; }
   .topbar .mobile-nav{ gap:0; padding:8px 0 6px; }
   .topbar .mobile-nav a{
     padding:15px 2px;

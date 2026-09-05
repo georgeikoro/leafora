@@ -93,11 +93,11 @@ const toast = (message, link, href = '/saved/', label = 'See your list') => {
 };
 
 const paintCount = () => {
-  const badge = document.getElementById('navCount');
-  if (!badge) return;
   const n = readSaved().length;
-  badge.textContent = String(n);
-  badge.hidden = n === 0;
+  for (const badge of document.querySelectorAll('.js-saved-count')) {
+    badge.textContent = String(n);
+    badge.hidden = n === 0;
+  }
 };
 
 const wireSave = (root = document) => {
@@ -397,11 +397,11 @@ const cartSubtotal = () => readCart().reduce((n, l) => n + l.price * l.qty, 0);
 const money2 = (n) => '£' + (Number.isInteger(n) ? n : n.toFixed(2));
 
 function paintCart() {
-  const badge = document.getElementById('cartCount');
-  if (!badge) return;
   const n = cartCount();
-  badge.textContent = String(n);
-  badge.hidden = n === 0;
+  for (const badge of document.querySelectorAll('.js-cart-count')) {
+    badge.textContent = String(n);
+    badge.hidden = n === 0;
+  }
 }
 paintCart();
 
